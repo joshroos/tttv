@@ -4,6 +4,7 @@ from nltk import sent_tokenize
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import wordnet
+from nltk import CFG
 
 
 def get_wordnet_pos(treebank_tag):
@@ -67,6 +68,17 @@ def pos_tags(sentences):
             if i[1] not in used_tags:
                 used_tags.append(i[1])
     return used_tags
+
+
+def make_lexicon(tagged_words):
+    lexicon = ""
+    for word in tagged_words:
+        string = "{} -> {}".format(word[1], word[0])
+        string = string.replace('$', 'S')
+        if string not in lexicon:
+            lexicon = lexicon + string + '\n'
+    return lexicon
+
 
 txt = open('antonio.txt').read()
 words = get_words(txt)
