@@ -79,14 +79,7 @@ def make_lexicon(tagged_words):
         string = string.replace('$', 'S')
         if string not in lexicon:
             lexicon = lexicon + string + '\n'
-        # if '$' in word[1]:
-        #     print(word[1])
-        #     x = 1
-        # else:
-        #     string = "{} -> {}".format(word[1], word[0])
-        #     cfg1.fromstring("{} -> {}".format(word[1], word[0]))
-    cfg1 = CFG.fromstring(lexicon)
-    print(cfg1)
+    return lexicon
 
 
 txt = open('antonio.txt').read()
