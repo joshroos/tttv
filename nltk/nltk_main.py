@@ -5,7 +5,7 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import wordnet
 from nltk import CFG
-from nltk.parse import RecursiveDescentParser
+from nltk.parse import RecursiveDescentParser, ShiftReduceParser, BottomUpLeftCornerChartParser
 
 
 def get_wordnet_pos(treebank_tag):
@@ -122,10 +122,10 @@ txt = open('antonio.txt').read()
 words = get_words(txt)
 sentences = get_sentences(txt)
 tags, tagged_words = pos_tags(sentences)
-print(sentences)
 lexicon = make_lexicon(tagged_words)
 rules = open('grammar_rules.txt').read()
 cfg1 = CFG.fromstring(rules + lexicon)
-print(cfg1)
-cfg_1_parser = RecursiveDescentParser(cfg1)
+cfg_1_parser = BottomUpLeftCornerChartParser(cfg1)
+
 tree = check_sentence(cfg_1_parser, 'the count would be very angry')
+tree = check_sentence(cfg_1_parser, 'antonio was a puny lad and not strong enough to work')

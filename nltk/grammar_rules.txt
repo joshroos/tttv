@@ -1,6 +1,21 @@
 S -> NP VP
-NP -> DT NN
+S -> S CC S
+NP -> DT NP
+NP -> NN
+NP -> PRP
+NP -> NP SBAR
+NP -> PRPS NN
+NP -> JJ NN
+NP -> NP CC A
+NP -> NNP
+SBAR -> IN S
 VP -> MD VP
+VP -> TO VP
 VP -> VB JJ
+VP -> VBD NP
+VP -> VBD JJ
 VP -> VBD
+VP -> VB
 JJ -> RB JJ
+A -> JJ RB VP
+
