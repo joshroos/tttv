@@ -1,7 +1,7 @@
-The man laughed. 
-The Count would be very angry. 
-He showed so much skill that his grandfather was delighted. 
-His grandfather was a stonecutter and he was very poor. 
-Antonio was a puny lad and not strong enough to work. 
 
-
+'' -> "''"
+, -> ','
+. -> '!'
+. -> '.'
+. -> '?'
+: -> ';'

@@ -4,8 +4,10 @@ from nltk import sent_tokenize
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import wordnet
+from nltk import Tree
 from nltk import CFG
 from nltk.parse import RecursiveDescentParser, ShiftReduceParser, BottomUpLeftCornerChartParser
+from stanfordcorenlp import StanfordCoreNLP
 
 
 def get_wordnet_pos(treebank_tag):
@@ -118,14 +120,55 @@ def check_sentence(parser, sentence):
     return tree_found
 
 
-txt = open('antonio.txt').read()
+def check_bool(parser, sentence):
+    if isinstance(sentence, str):
+        sentence = sentence.split()
+    results = parser.parse(sentence)
+    for tree in results:
+        return True
+    return False
+
+
+def extract_rules(sentences):
+    nlp = StanfordCoreNLP('http://localhost', port=9000, timeout=30000)
+    
+    file_in = open('grammar.txt', "w")
+    for sentence in sentences:
+        parsed = nlp.parse(sentence)
+        t = Tree.fromstring(parsed)
+        rules = t.productions()    
+        for rule in rules:
+            file_in.write(str(rule) + "\n")    
+    file_in.close()
+
+
+def write_grammar():
+    file_in = open('grammar.txt', "r")
+    rules = file_in.read()
+    rules = sorted(set(rules.split('\n')))
+    file_in.close()
+    file_out = open('grammar_rules.txt', "w")
+    for rule in rules:
+        file_out.write(rule + '\n')
+    file_out.close()
+
+
+txt = open('antonio_edited.txt').read()
 words = get_words(txt)
 sentences = get_sentences(txt)
 tags, tagged_words = pos_tags(sentences)
-lexicon = make_lexicon(tagged_words)
+
+# extract_rules(sentences)
+# write_grammar()
+
 rules = open('grammar_rules.txt').read()
-cfg1 = CFG.fromstring(rules + lexicon)
+cfg1 = CFG.fromstring(rules)
 cfg_1_parser = BottomUpLeftCornerChartParser(cfg1)
 
-tree = check_sentence(cfg_1_parser, 'the count would be very angry')
-tree = check_sentence(cfg_1_parser, 'antonio was a puny lad and not strong enough to work')
+num_trees = 0
+trees_found = 0
+
+for sentence in sentences:
+    num_trees += 1
+    if check_bool(cfg_1_parser, sentence):
+        trees_found +=1

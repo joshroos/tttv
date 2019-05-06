@@ -1,0 +1,2109 @@
+ROOT -> S
+S -> ADVP NP VP .
+ADVP -> NP IN
+NP -> NP NP
+NP -> DT JJ
+DT -> 'A'
+JJ -> 'good'
+NP -> JJ NNS
+JJ -> 'many'
+NNS -> 'years'
+IN -> 'ago'
+NP -> EX
+EX -> 'there'
+VP -> VBD PP NP
+VBD -> 'lived'
+PP -> IN NP
+IN -> 'in'
+NP -> NNP
+NNP -> 'Italy'
+NP -> NP SBAR
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'little'
+NN -> 'boy'
+SBAR -> WHNP S
+WHNP -> WP$ NN
+WP$ -> 'whose'
+NN -> 'name'
+S -> VP
+VP -> VBD NP
+VBD -> 'was'
+NP -> NNP NNP
+NNP -> 'Antonio'
+NNP -> 'Canova'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'He'
+VP -> VBD PP SBAR
+VBD -> 'lived'
+PP -> IN NP
+IN -> 'with'
+NP -> PRP$ NN
+PRP$ -> 'his'
+NN -> 'grandfather'
+SBAR -> IN S
+IN -> 'because'
+S -> NP VP
+NP -> PRP$ JJ NN
+PRP$ -> 'his'
+JJ -> 'own'
+NN -> 'father'
+VP -> VBD ADJP
+VBD -> 'was'
+ADJP -> JJ
+JJ -> 'dead'
+. -> '.'
+ROOT -> S
+S -> S CC S .
+S -> NP VP
+NP -> PRP$ NN
+PRP$ -> 'His'
+NN -> 'grandfather'
+VP -> VBD NP
+VBD -> 'was'
+NP -> DT NN
+DT -> 'a'
+NN -> 'stonecutter'
+CC -> 'and'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> VBD ADJP
+VBD -> 'was'
+ADJP -> RB JJ
+RB -> 'very'
+JJ -> 'poor'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> NNP
+NNP -> 'Antonio'
+VP -> VBD VP
+VBD -> 'was'
+VP -> NP ADJP
+NP -> NP CC RB
+NP -> DT ADJP NN
+DT -> 'a'
+ADJP -> JJ
+JJ -> 'puny'
+NN -> 'lad'
+CC -> 'and'
+RB -> 'not'
+ADJP -> JJ RB S
+JJ -> 'strong'
+RB -> 'enough'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB
+VB -> 'work'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'He'
+VP -> VBD RB VP
+VBD -> 'did'
+RB -> 'not'
+VP -> VB S
+VB -> 'care'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB PP
+VB -> 'play'
+PP -> IN NP
+IN -> 'with'
+NP -> NP PP
+NP -> DT JJ NNS
+DT -> 'the'
+JJ -> 'other'
+NNS -> 'boys'
+PP -> IN NP
+IN -> 'of'
+NP -> DT NN
+DT -> 'the'
+NN -> 'town'
+. -> '.'
+ROOT -> S
+S -> CC NP VP .
+CC -> 'But'
+NP -> PRP
+PRP -> 'he'
+VP -> VBD S
+VBD -> 'liked'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB PP PP
+VB -> 'go'
+PP -> IN NP
+IN -> 'with'
+NP -> PRP$ NN
+PRP$ -> 'his'
+NN -> 'grandfather'
+PP -> TO NP
+TO -> 'to'
+NP -> DT NN
+DT -> 'the'
+NN -> 'stoneyard'
+. -> '.'
+ROOT -> S
+S -> SBAR , NP VP .
+SBAR -> IN S
+IN -> 'While'
+S -> NP VP
+NP -> DT JJ NN
+DT -> 'the'
+JJ -> 'old'
+NN -> 'man'
+VP -> VBD ADJP , S
+VBD -> 'was'
+ADJP -> JJ
+JJ -> 'busy'
+, -> ','
+S -> VP
+VP -> VBG CC VBG NP
+VBG -> 'cutting'
+CC -> 'and'
+VBG -> 'trimming'
+NP -> NP PP
+NP -> DT JJ NNS
+DT -> 'the'
+JJ -> 'great'
+NNS -> 'blocks'
+PP -> IN NP
+IN -> 'of'
+NP -> NN
+NN -> 'stone'
+, -> ','
+NP -> DT NN
+DT -> 'the'
+NN -> 'lad'
+VP -> MD VP
+MD -> 'would'
+VP -> VB PP
+VB -> 'play'
+PP -> IN NP
+IN -> 'among'
+NP -> DT NNS
+DT -> 'the'
+NNS -> 'chips'
+. -> '.'
+ROOT -> S
+S -> ADVP NP VP .
+ADVP -> RB
+RB -> 'Sometimes'
+NP -> PRP
+PRP -> 'he'
+VP -> MD VP
+MD -> 'would'
+VP -> VB NP
+VB -> 'make'
+NP -> NP PP
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'little'
+NN -> 'statue'
+PP -> IN NP
+IN -> 'of'
+NP -> JJ NN
+JJ -> 'soft'
+NN -> 'clay'
+. -> '.'
+ROOT -> S
+S -> ADVP NP VP .
+ADVP -> RB
+RB -> 'Sometimes'
+NP -> PRP
+PRP -> 'he'
+VP -> MD VP
+MD -> 'would'
+VP -> VP CC VP
+VP -> VB NP
+VB -> 'take'
+NP -> NN
+NN -> 'hammer'
+CC -> 'and'
+VP -> VP CC VP
+VP -> VB
+VB -> 'chisel'
+CC -> 'and'
+VP -> VB S
+VB -> 'try'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP PP
+VB -> 'cut'
+NP -> DT NN
+DT -> 'a'
+NN -> 'statue'
+PP -> IN NP
+IN -> 'from'
+NP -> NP PP
+NP -> DT NN
+DT -> 'a'
+NN -> 'piece'
+PP -> IN NP
+IN -> 'of'
+NP -> NN
+NN -> 'rock'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'He'
+VP -> VBD NP SBAR
+VBD -> 'showed'
+NP -> ADJP NN
+ADJP -> RB JJ
+RB -> 'so'
+JJ -> 'much'
+NN -> 'skill'
+SBAR -> IN S
+IN -> 'that'
+S -> NP VP
+NP -> PRP$ NN
+PRP$ -> 'his'
+NN -> 'grandfather'
+VP -> VBD ADJP
+VBD -> 'was'
+ADJP -> JJ
+JJ -> 'delighted'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> DT NN
+DT -> 'The'
+NN -> 'boy'
+VP -> MD VP
+MD -> 'will'
+VP -> VB NP
+VB -> 'be'
+NP -> NP NP
+NP -> DT NN
+DT -> 'a'
+NN -> 'sculptor'
+NP -> DT NN
+DT -> 'some'
+NN -> 'day'
+. -> '.'
+ROOT -> FRAG
+FRAG -> ADVP SBAR .
+ADVP -> RB
+RB -> 'Then'
+SBAR -> WHADVP S
+WHADVP -> WRB
+WRB -> 'when'
+S -> NP VP
+NP -> PRP
+PRP -> 'they'
+VP -> VBD NP PP
+VBD -> 'went'
+NP -> NN
+NN -> 'home'
+PP -> IN NP
+IN -> 'in'
+NP -> DT NN
+DT -> 'the'
+NN -> 'evening'
+. -> '.'
+ROOT -> SBARQ
+SBARQ -> WHNP SQ .
+WHNP -> WDT
+WDT -> 'What'
+SQ -> VBP NP VP
+VBP -> 'have'
+NP -> PRP
+PRP -> 'you'
+VP -> VBN VP
+VBN -> 'been'
+VP -> VBG NP
+VBG -> 'doing'
+NP -> NP , NP
+NP -> NN
+NN -> 'today'
+, -> ','
+NP -> PRP$ JJ NN
+PRP$ -> 'my'
+JJ -> 'little'
+NN -> 'sculptor'
+. -> '?'
+ROOT -> S
+S -> CC NP VP .
+CC -> 'And'
+NP -> PRP
+PRP -> 'she'
+VP -> MD VP
+MD -> 'would'
+VP -> VP CC VP , CC VP
+VP -> VB NP PP
+VB -> 'take'
+NP -> PRP
+PRP -> 'him'
+PP -> IN NP
+IN -> 'upon'
+NP -> PRP$ NN
+PRP$ -> 'her'
+NN -> 'lap'
+CC -> 'and'
+VP -> VB PP
+VB -> 'sing'
+PP -> TO NP
+TO -> 'to'
+NP -> PRP
+PRP -> 'him'
+, -> ','
+CC -> 'or'
+VP -> VB NP NP
+VB -> 'tell'
+NP -> PRP
+PRP -> 'him'
+NP -> NP SBAR
+NP -> NNS
+NNS -> 'stories'
+SBAR -> WHNP S
+WHNP -> WDT
+WDT -> 'that'
+S -> VP
+VP -> VBD NP PP
+VBD -> 'filled'
+NP -> PRP$ NN
+PRP$ -> 'his'
+NN -> 'mind'
+PP -> IN NP
+IN -> 'with'
+NP -> NP PP
+NP -> NNS
+NNS -> 'pictures'
+PP -> IN NP
+IN -> 'of'
+NP -> ADJP NNS
+ADJP -> JJ CC JJ
+JJ -> 'wonderful'
+CC -> 'and'
+JJ -> 'beautiful'
+NNS -> 'things'
+. -> '.'
+ROOT -> S
+S -> CC NP , SBAR , NP VP .
+CC -> 'And'
+NP -> DT JJ NN
+DT -> 'the'
+JJ -> 'next'
+NN -> 'day'
+, -> ','
+SBAR -> WHADVP S
+WHADVP -> WRB
+WRB -> 'when'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> VBD ADVP PP
+VBD -> 'went'
+ADVP -> RB
+RB -> 'back'
+PP -> TO NP
+TO -> 'to'
+NP -> DT NN
+DT -> 'the'
+NN -> 'stoneyard'
+, -> ','
+NP -> PRP
+PRP -> 'he'
+VP -> MD VP
+MD -> 'would'
+VP -> VB S
+VB -> 'try'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP
+VB -> 'make'
+NP -> NP PP
+NP -> DT
+DT -> 'some'
+PP -> IN NP
+IN -> 'of'
+NP -> NP PP
+NP -> DT NNS
+DT -> 'those'
+NNS -> 'pictures'
+PP -> IN NP
+IN -> 'in'
+NP -> NN CC NN
+NN -> 'stone'
+CC -> 'or'
+NN -> 'clay'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> EX
+EX -> 'There'
+VP -> VBD PP NP
+VBD -> 'lived'
+PP -> IN NP
+IN -> 'in'
+NP -> DT JJ NN
+DT -> 'the'
+JJ -> 'same'
+NN -> 'town'
+NP -> NP SBAR
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'rich'
+NN -> 'man'
+SBAR -> WHNP S
+WHNP -> WP
+WP -> 'who'
+S -> VP
+VP -> VBD VP
+VBD -> 'was'
+VP -> VBN NP
+VBN -> 'called'
+NP -> DT NN
+DT -> 'the'
+NN -> 'Count'
+. -> '.'
+ROOT -> S
+S -> S , CC S .
+S -> ADVP NP VP
+ADVP -> RB
+RB -> 'Sometimes'
+NP -> DT NN
+DT -> 'the'
+NN -> 'Count'
+VP -> MD VP
+MD -> 'would'
+VP -> VB NP
+VB -> 'have'
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'grand'
+NN -> 'dinner'
+, -> ','
+CC -> 'and'
+S -> NP VP
+NP -> NP PP
+NP -> PRP$ JJ NNS
+PRP$ -> 'his'
+JJ -> 'rich'
+NNS -> 'friends'
+PP -> IN NP
+IN -> 'from'
+NP -> JJ NNS
+JJ -> 'other'
+NNS -> 'towns'
+VP -> MD VP
+MD -> 'would'
+VP -> VB S
+VB -> 'come'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP
+VB -> 'visit'
+NP -> PRP
+PRP -> 'him'
+. -> '.'
+ROOT -> S
+S -> RB NP VP .
+RB -> 'Then'
+NP -> NP NN
+NP -> NNP POS
+NNP -> 'Antonio'
+POS -> "'s"
+NN -> 'grandfather'
+VP -> MD VP
+MD -> 'would'
+VP -> VB PRT PP
+VB -> 'go'
+PRT -> RP
+RP -> 'up'
+PP -> TO NP
+TO -> 'to'
+NP -> NP NN S
+NP -> DT NN POS
+DT -> 'the'
+NN -> 'Count'
+POS -> "'s"
+NN -> 'house'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB PP SBAR
+VB -> 'help'
+PP -> IN NP
+IN -> 'with'
+NP -> NP PP
+NP -> DT NN
+DT -> 'the'
+NN -> 'work'
+PP -> IN NP
+IN -> 'in'
+NP -> DT NN
+DT -> 'the'
+NN -> 'kitchen'
+SBAR -> IN S
+IN -> 'because'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> VBD NP
+VBD -> 'was'
+NP -> NP CONJP NP
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'fine'
+NN -> 'cook'
+CONJP -> RB RB IN
+RB -> 'as'
+RB -> 'well'
+IN -> 'as'
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'good'
+NN -> 'stonecutter'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'It'
+VP -> VBD NP-TMP SBAR
+VBD -> 'happened'
+NP-TMP -> CD NN
+CD -> 'one'
+NN -> 'day'
+SBAR -> WHNP S
+WHNP -> WDT
+WDT -> 'that'
+S -> NP VP
+NP -> NNP
+NNP -> 'Antonio'
+VP -> VBD PP PP
+VBD -> 'went'
+PP -> IN NP
+IN -> 'with'
+NP -> PRP$ NN
+PRP$ -> 'his'
+NN -> 'grandfather'
+PP -> TO NP
+TO -> 'to'
+NP -> NP JJ NN
+NP -> DT NN POS
+DT -> 'the'
+NN -> 'Count'
+POS -> "'s"
+JJ -> 'great'
+NN -> 'house'
+. -> '.'
+ROOT -> S
+S -> S , CC S .
+S -> NP VP
+NP -> NP PP
+NP -> DT NNS
+DT -> 'Some'
+NNS -> 'people'
+PP -> IN NP
+IN -> 'from'
+NP -> DT NN
+DT -> 'the'
+NN -> 'city'
+VP -> VBD VP
+VBD -> 'were'
+VP -> VBG
+VBG -> 'coming'
+, -> ','
+CC -> 'and'
+S -> NP VP
+NP -> EX
+EX -> 'there'
+VP -> VBD S
+VBD -> 'was'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP
+VB -> 'be'
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'grand'
+NN -> 'feast'
+. -> '.'
+ROOT -> S
+S -> S , CC S : CC S .
+S -> NP VP
+NP -> DT NN
+DT -> 'The'
+NN -> 'boy'
+VP -> MD RB VP
+MD -> 'could'
+RB -> 'not'
+VP -> VB
+VB -> 'cook'
+, -> ','
+CC -> 'and'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> VBD RB ADJP
+VBD -> 'was'
+RB -> 'not'
+ADJP -> ADJP S
+ADJP -> JJ JJ
+JJ -> 'old'
+JJ -> 'enough'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB PP
+VB -> 'wait'
+PP -> IN NP
+IN -> 'on'
+NP -> DT NN
+DT -> 'the'
+NN -> 'table'
+: -> ';'
+CC -> 'but'
+S -> S , CC S
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> MD VP
+MD -> 'could'
+VP -> VB NP
+VB -> 'wash'
+NP -> DT NNS CC NNS
+DT -> 'the'
+NNS -> 'pans'
+CC -> 'and'
+NNS -> 'kettles'
+, -> ','
+CC -> 'and'
+S -> SBAR , NP VP
+SBAR -> IN S
+IN -> 'as'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> VBD ADJP
+VBD -> 'was'
+ADJP -> JJ CC JJ
+JJ -> 'smart'
+CC -> 'and'
+JJ -> 'quick'
+, -> ','
+NP -> PRP
+PRP -> 'he'
+VP -> MD VP
+MD -> 'could'
+VP -> VB PP
+VB -> 'help'
+PP -> IN NP
+IN -> 'in'
+NP -> JJ JJ NNS
+JJ -> 'many'
+JJ -> 'other'
+NNS -> 'ways'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> DT
+DT -> 'All'
+VP -> VBD ADVP SBAR
+VBD -> 'went'
+ADVP -> RB
+RB -> 'well'
+SBAR -> IN S
+IN -> 'until'
+S -> NP VP
+NP -> PRP
+PRP -> 'it'
+VP -> VBD VP
+VBD -> 'was'
+VP -> NN S
+NN -> 'time'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP
+VB -> 'spread'
+NP -> NP PP
+NP -> DT NN
+DT -> 'the'
+NN -> 'table'
+PP -> IN NP
+IN -> 'for'
+NP -> NN
+NN -> 'dinner'
+. -> '.'
+ROOT -> S
+S -> S , CC S .
+S -> ADVP NP VP
+ADVP -> RB
+RB -> 'Then'
+NP -> EX
+EX -> 'there'
+VP -> VBD NP
+VBD -> 'was'
+NP -> NP PP
+NP -> DT NN
+DT -> 'a'
+NN -> 'crash'
+PP -> IN NP
+IN -> 'in'
+NP -> DT NN NN
+DT -> 'the'
+NN -> 'dining'
+NN -> 'room'
+, -> ','
+CC -> 'and'
+S -> NP VP
+NP -> DT NN
+DT -> 'a'
+NN -> 'man'
+VP -> VBD PP PP
+VBD -> 'rushed'
+PP -> IN NP
+IN -> 'into'
+NP -> NP PP
+NP -> DT NN
+DT -> 'the'
+NN -> 'kitchen'
+PP -> IN NP
+IN -> 'with'
+NP -> NP PP
+NP -> DT NNS
+DT -> 'some'
+NNS -> 'pieces'
+PP -> IN NP
+IN -> 'of'
+NP -> NN
+NN -> 'marble'
+PP -> IN NP
+IN -> 'in'
+NP -> PRP$ NNS
+PRP$ -> 'his'
+NNS -> 'hands'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'He'
+VP -> VBD UCP
+VBD -> 'was'
+UCP -> ADJP , CC VP
+ADJP -> JJ
+JJ -> 'pale'
+, -> ','
+CC -> 'and'
+VP -> VBG PP
+VBG -> 'trembling'
+PP -> IN NP
+IN -> 'with'
+NP -> NN
+NN -> 'fright'
+. -> '.'
+ROOT -> SBARQ
+SBARQ -> WHNP SQ .
+WHNP -> WDT
+WDT -> 'What'
+SQ -> MD NP VP
+MD -> 'shall'
+NP -> PRP
+PRP -> 'I'
+VP -> VB
+VB -> 'do'
+. -> '?'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'I'
+VP -> VBP VP
+VBP -> 'have'
+VP -> VBN NP
+VBN -> 'broken'
+NP -> NP SBAR
+NP -> DT NN
+DT -> 'the'
+NN -> 'statue'
+SBAR -> WHNP S
+WHNP -> WDT
+WDT -> 'that'
+S -> VP
+VP -> VBD S
+VBD -> 'was'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB PP
+VB -> 'stand'
+PP -> IN NP
+IN -> 'at'
+NP -> NP PP
+NP -> DT NN
+DT -> 'the'
+NN -> 'center'
+PP -> IN NP
+IN -> 'of'
+NP -> DT NN
+DT -> 'the'
+NN -> 'table'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'I'
+VP -> MD RB VP
+MD -> 'can'
+RB -> 'not'
+VP -> VB NP ADVP
+VB -> 'make'
+NP -> DT NN NN
+DT -> 'the'
+NN -> 'table'
+NN -> 'look'
+ADVP -> RB PP
+RB -> 'pretty'
+PP -> IN NP
+IN -> 'without'
+NP -> DT NN
+DT -> 'the'
+NN -> 'statue'
+. -> '.'
+ROOT -> SBARQ
+SBARQ -> WHNP SQ .
+WHNP -> WP
+WP -> 'What'
+SQ -> MD NP VP
+MD -> 'will'
+NP -> DT NNP
+DT -> 'the'
+NNP -> 'Count'
+VP -> VB
+VB -> 'say'
+. -> '?'
+ROOT -> S
+S -> CC NP VP .
+CC -> 'And'
+NP -> RB PDT DT JJ NNS
+RB -> 'now'
+PDT -> 'all'
+DT -> 'the'
+JJ -> 'other'
+NNS -> 'servants'
+VP -> VBD PP
+VBD -> 'were'
+PP -> IN NP
+IN -> 'in'
+NP -> NN
+NN -> 'trouble'
+. -> '.'
+ROOT -> S
+S -> VP .
+VP -> VBD NP
+VBD -> 'Was'
+NP -> DT NN S
+DT -> 'the'
+NN -> 'dinner'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP
+VB -> 'be'
+NP -> NP PP
+NP -> DT NN
+DT -> 'a'
+NN -> 'failure'
+PP -> IN NP
+IN -> 'after'
+NP -> DT
+DT -> 'all'
+. -> '?'
+ROOT -> S
+S -> IN NP VP .
+IN -> 'For'
+NP -> NN
+NN -> 'everything'
+VP -> VBD PP
+VBD -> 'depended'
+PP -> IN S
+IN -> 'on'
+S -> VP
+VP -> VBG S
+VBG -> 'having'
+S -> NP ADVP VP
+NP -> DT NN
+DT -> 'the'
+NN -> 'table'
+ADVP -> RB
+RB -> 'nicely'
+VP -> VBD
+VBD -> 'arranged'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> DT NN
+DT -> 'The'
+NN -> 'Count'
+VP -> MD VP
+MD -> 'would'
+VP -> VB ADJP
+VB -> 'be'
+ADJP -> RB JJ
+RB -> 'very'
+JJ -> 'angry'
+. -> '.'
+ROOT -> SBARQ
+SBARQ -> WHNP SQ .
+WHNP -> WDT
+WDT -> 'What'
+SQ -> MD NP VP
+MD -> 'shall'
+NP -> PRP
+PRP -> 'we'
+VP -> VB
+VB -> 'do'
+. -> '?'
+ROOT -> S
+S -> RB NP VP .
+RB -> 'Then'
+NP -> JJ NNP NNP
+JJ -> 'little'
+NNP -> 'Antonio'
+NNP -> 'Canova'
+VP -> VP , CC VP
+VP -> VBD NP
+VBD -> 'left'
+NP -> PRP$ NNS CC NNS
+PRP$ -> 'his'
+NNS -> 'pans'
+CC -> 'and'
+NNS -> 'kettles'
+, -> ','
+CC -> 'and'
+VP -> VBD PRT PP
+VBD -> 'went'
+PRT -> RB
+RB -> 'up'
+PP -> TO NP
+TO -> 'to'
+NP -> NP SBAR
+NP -> DT NN
+DT -> 'the'
+NN -> 'man'
+SBAR -> WHNP S
+WHNP -> WP
+WP -> 'who'
+S -> VP
+VP -> VBD VP
+VBD -> 'had'
+VP -> VBN NP
+VBN -> 'caused'
+NP -> DT NN
+DT -> 'the'
+NN -> 'trouble'
+. -> '.'
+ROOT -> SQ
+SQ -> SBAR , MD NP VP .
+SBAR -> IN S
+IN -> 'If'
+S -> NP VP
+NP -> PRP
+PRP -> 'you'
+VP -> VBD NP
+VBD -> 'had'
+NP -> DT NN
+DT -> 'another'
+NN -> 'statue'
+, -> ','
+MD -> 'could'
+NP -> PRP
+PRP -> 'you'
+VP -> VB NP
+VB -> 'arrange'
+NP -> DT NN
+DT -> 'the'
+NN -> 'table'
+. -> '?'
+ROOT -> S
+S -> `` ADVP , '' VP . ''
+`` -> '``'
+ADVP -> RB
+RB -> 'Certainly'
+, -> ','
+'' -> "''"
+VP -> VBD NP
+VBD -> 'said'
+NP -> NP : `` S
+NP -> DT NN
+DT -> 'the'
+NN -> 'man'
+: -> ';'
+`` -> '``'
+S -> NP VP
+NP -> DT
+DT -> 'that'
+VP -> VBZ , SBAR
+VBZ -> 'is'
+, -> ','
+SBAR -> IN S
+IN -> 'if'
+S -> NP VP
+NP -> DT NN
+DT -> 'the'
+NN -> 'statue'
+VP -> VBD PP
+VBD -> 'were'
+PP -> IN NP
+IN -> 'of'
+NP -> NP CC NP
+NP -> DT JJ NN
+DT -> 'the'
+JJ -> 'right'
+NN -> 'length'
+CC -> 'and'
+NP -> NN
+NN -> 'height'
+. -> '.'
+'' -> "''"
+ROOT -> SQ
+SQ -> MD NP VP .
+MD -> 'Will'
+NP -> PRP
+PRP -> 'you'
+VP -> VB S
+VB -> 'let'
+S -> NP VP
+NP -> PRP
+PRP -> 'me'
+VP -> VB S
+VB -> 'try'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP
+VB -> 'make'
+NP -> CD
+CD -> 'one'
+. -> '?'
+ROOT -> S
+S -> ADVP NP VP .
+ADVP -> RB
+RB -> 'Perhaps'
+NP -> PRP
+PRP -> 'I'
+VP -> MD VP
+MD -> 'can'
+VP -> VB NP
+VB -> 'make'
+NP -> NP SBAR
+NP -> NN
+NN -> 'something'
+SBAR -> WHNP S
+WHNP -> WDT
+WDT -> 'that'
+S -> VP
+VP -> MD VP
+MD -> 'will'
+VP -> VB
+VB -> 'do'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> DT NN
+DT -> 'The'
+NN -> 'man'
+VP -> VBD
+VBD -> 'laughed'
+. -> '.'
+ROOT -> INTJ
+INTJ -> NN .
+NN -> 'Nonsense'
+. -> '!'
+ROOT -> SBARQ
+SBARQ -> WHNP SQ .
+WHNP -> WP
+WP -> 'Who'
+SQ -> VBP NP SBAR
+VBP -> 'are'
+NP -> PRP
+PRP -> 'you'
+SBAR -> IN S
+IN -> 'that'
+S -> NP VP
+NP -> PRP
+PRP -> 'you'
+VP -> VBP PP
+VBP -> 'talk'
+PP -> IN S
+IN -> 'of'
+S -> VP
+VP -> VBG NP PP
+VBG -> 'making'
+NP -> NNS
+NNS -> 'statues'
+PP -> IN NP
+IN -> 'on'
+NP -> NP NN
+NP -> DT NN POS
+DT -> 'an'
+NN -> 'hour'
+POS -> "'s"
+NN -> 'notice'
+. -> '?'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'I'
+VP -> VBP NP
+VBP -> 'am'
+NP -> NNP NNP
+NNP -> 'Antonio'
+NNP -> 'Canova'
+. -> '.'
+ROOT -> S
+S -> VP .
+VP -> VB S
+VB -> 'Let'
+S -> NP VP
+NP -> DT NN
+DT -> 'the'
+NN -> 'boy'
+VP -> VB SBAR
+VB -> 'try'
+SBAR -> WHNP S
+WHNP -> WP
+WP -> 'what'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> MD VP
+MD -> 'can'
+VP -> VB
+VB -> 'do'
+. -> '.'
+ROOT -> S
+S -> CC ADVP , SBAR , NP VP .
+CC -> 'And'
+ADVP -> RB
+RB -> 'so'
+, -> ','
+SBAR -> IN S
+IN -> 'since'
+S -> NP VP
+NP -> NN RB
+NN -> 'nothing'
+RB -> 'else'
+VP -> MD VP
+MD -> 'could'
+VP -> VB VP
+VB -> 'be'
+VP -> VBN
+VBN -> 'done'
+, -> ','
+NP -> DT NN
+DT -> 'the'
+NN -> 'man'
+VP -> VBD S
+VBD -> 'allowed'
+S -> NP VP
+NP -> PRP
+PRP -> 'him'
+VP -> TO VP
+TO -> 'to'
+VP -> VB
+VB -> 'try'
+. -> '.'
+ROOT -> S
+S -> PP NP VP .
+PP -> IN NP
+IN -> 'On'
+NP -> DT NN NN
+DT -> 'the'
+NN -> 'kitchen'
+NN -> 'table'
+NP -> EX
+EX -> 'there'
+VP -> VBD NP
+VBD -> 'was'
+NP -> NP PP
+NP -> DT JJ JJ NN
+DT -> 'a'
+JJ -> 'large'
+JJ -> 'square'
+NN -> 'lump'
+PP -> IN NP
+IN -> 'of'
+NP -> JJ NN
+JJ -> 'yellow'
+NN -> 'butter'
+. -> '.'
+ROOT -> S
+S -> S , CC S .
+S -> NP VP
+NP -> NP NP
+NP -> CD CD NNS
+CD -> 'Two'
+CD -> 'hundred'
+NNS -> 'pounds'
+NP -> DT NN
+DT -> 'the'
+NN -> 'lump'
+VP -> VBD
+VBD -> 'weighed'
+, -> ','
+CC -> 'and'
+S -> NP VP
+NP -> PRP
+PRP -> 'it'
+VP -> VBD ADVP VP
+VBD -> 'had'
+ADVP -> RB
+RB -> 'just'
+VP -> VBN PP , ADJP
+VBN -> 'come'
+PP -> IN
+IN -> 'in'
+, -> ','
+ADJP -> JJ CC JJ , PP
+JJ -> 'fresh'
+CC -> 'and'
+JJ -> 'clean'
+, -> ','
+PP -> IN NP
+IN -> 'from'
+NP -> NP PP
+NP -> DT NN
+DT -> 'the'
+NN -> 'dairy'
+PP -> IN NP
+IN -> 'on'
+NP -> DT NN
+DT -> 'the'
+NN -> 'mountain'
+. -> '.'
+ROOT -> S
+S -> PP , NP VP .
+PP -> IN NP
+IN -> 'With'
+NP -> NP PP
+NP -> DT NN NN
+DT -> 'a'
+NN -> 'kitchen'
+NN -> 'knife'
+PP -> IN NP
+IN -> 'in'
+NP -> PRP$ NN
+PRP$ -> 'his'
+NN -> 'hand'
+, -> ','
+NP -> NNP
+NNP -> 'Antonio'
+VP -> VBD S
+VBD -> 'began'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB CC VB NP
+VB -> 'cut'
+CC -> 'and'
+VB -> 'carve'
+NP -> DT NN
+DT -> 'this'
+NN -> 'butter'
+. -> '.'
+ROOT -> S
+S -> S : CC S .
+S -> PP NP VP
+PP -> IN NP
+IN -> 'In'
+NP -> DT JJ NNS
+DT -> 'a'
+JJ -> 'few'
+NNS -> 'minutes'
+NP -> PRP
+PRP -> 'he'
+VP -> VBD VP
+VBD -> 'had'
+VP -> VBN NP PP
+VBN -> 'molded'
+NP -> PRP
+PRP -> 'it'
+PP -> IN NP
+IN -> 'into'
+NP -> NP PP
+NP -> DT NN
+DT -> 'the'
+NN -> 'shape'
+PP -> IN NP
+IN -> 'of'
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'crouching'
+NN -> 'lion'
+: -> ';'
+CC -> 'and'
+S -> NP VP
+NP -> PDT DT NNS
+PDT -> 'all'
+DT -> 'the'
+NNS -> 'servants'
+VP -> VBN PP S
+VBN -> 'crowded'
+PP -> IN
+IN -> 'around'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP
+VB -> 'see'
+NP -> PRP
+PRP -> 'it'
+. -> '.'
+ROOT -> FRAG
+FRAG -> WHADVP ADJP
+WHADVP -> WRB
+WRB -> 'How'
+ADJP -> JJ .
+JJ -> 'beautiful'
+. -> '!'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'It'
+VP -> VBZ ADJP
+VBZ -> 'is'
+ADJP -> ADJP PP
+ADJP -> NP JJR
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'great'
+NN -> 'deal'
+JJR -> 'prettier'
+PP -> IN NP
+IN -> 'than'
+NP -> NP SBAR
+NP -> DT NN
+DT -> 'the'
+NN -> 'statue'
+SBAR -> WHNP S
+WHNP -> WDT
+WDT -> 'that'
+S -> VP
+VP -> VBD VP
+VBD -> 'was'
+VP -> VBN
+VBN -> 'broken'
+. -> '.'
+ROOT -> S
+S -> SBAR , NP VP .
+SBAR -> WHADVP S
+WHADVP -> WRB
+WRB -> 'When'
+S -> NP VP
+NP -> PRP
+PRP -> 'it'
+VP -> VBD VP
+VBD -> 'was'
+VP -> VBN
+VBN -> 'finished'
+, -> ','
+NP -> DT NN
+DT -> 'the'
+NN -> 'man'
+VP -> VBD NP PP
+VBD -> 'carried'
+NP -> PRP
+PRP -> 'it'
+PP -> TO NP
+TO -> 'to'
+NP -> PRP$ NN
+PRP$ -> 'its'
+NN -> 'place'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> DT NN
+DT -> 'The'
+NN -> 'table'
+VP -> MD VP
+MD -> 'will'
+VP -> VB ADJP PP SBAR
+VB -> 'be'
+ADJP -> JJR
+JJR -> 'handsomer'
+PP -> IN NP
+IN -> 'by'
+NP -> NN
+NN -> 'half'
+SBAR -> IN S
+IN -> 'than'
+S -> NP ADVP VP
+NP -> PRP
+PRP -> 'I'
+ADVP -> RB
+RB -> 'ever'
+VP -> VBD S
+VBD -> 'hoped'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP
+VB -> 'make'
+NP -> PRP
+PRP -> 'it'
+. -> '.'
+ROOT -> S
+S -> SBAR , NP VP .
+SBAR -> WHADVP S
+WHADVP -> WRB
+WRB -> 'When'
+S -> NP VP
+NP -> NP CC NP
+NP -> DT NN
+DT -> 'the'
+NN -> 'Count'
+CC -> 'and'
+NP -> PRP$ NNS
+PRP$ -> 'his'
+NNS -> 'friends'
+VP -> VBD PP
+VBD -> 'came'
+PP -> IN PP
+IN -> 'in'
+PP -> TO NP
+TO -> 'to'
+NP -> NN
+NN -> 'dinner'
+, -> ','
+NP -> NP SBAR
+NP -> DT JJ NN
+DT -> 'the'
+JJ -> 'first'
+NN -> 'thing'
+SBAR -> S
+S -> NP VP
+NP -> PRP
+PRP -> 'they'
+VP -> VBD
+VBD -> 'saw'
+VP -> VBD NP
+VBD -> 'was'
+NP -> DT JJ NN
+DT -> 'the'
+JJ -> 'yellow'
+NN -> 'lion'
+. -> '.'
+ROOT -> NP
+NP -> NP NP .
+NP -> WP
+WP -> 'What'
+NP -> NP PP
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'beautiful'
+NN -> 'work'
+PP -> IN NP
+IN -> 'of'
+NP -> NN
+NN -> 'art'
+. -> '!'
+ROOT -> S
+S -> NP VP .
+NP -> NP PP
+NP -> NN
+NN -> 'None'
+PP -> CC NP
+CC -> 'but'
+NP -> DT ADJP NN
+DT -> 'a'
+ADJP -> RB JJ
+RB -> 'very'
+JJ -> 'great'
+NN -> 'artist'
+VP -> MD ADVP VP
+MD -> 'could'
+ADVP -> RB
+RB -> 'ever'
+VP -> VB NP
+VB -> 'carve'
+NP -> PDT DT NN
+PDT -> 'such'
+DT -> 'a'
+NN -> 'figure'
+. -> '.'
+ROOT -> FRAG
+FRAG -> ADJP SBAR .
+ADJP -> WHADVP JJ
+WHADVP -> WRB
+WRB -> 'How'
+JJ -> 'odd'
+SBAR -> IN S
+IN -> 'that'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> MD VP
+MD -> 'should'
+VP -> VB S
+VB -> 'choose'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP PP
+VB -> 'make'
+NP -> PRP
+PRP -> 'it'
+PP -> IN NP
+IN -> 'of'
+NP -> NN
+NN -> 'butter'
+. -> '!'
+ROOT -> S
+S -> RB NP VP .
+RB -> 'Then'
+NP -> PRP
+PRP -> 'they'
+VP -> VBD NP
+VBD -> 'asked'
+NP -> DT NN S
+DT -> 'the'
+NN -> 'Count'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP NP
+VB -> 'tell'
+NP -> PRP
+PRP -> 'them'
+NP -> NP PP
+NP -> DT NN
+DT -> 'the'
+NN -> 'name'
+PP -> IN NP
+IN -> 'of'
+NP -> DT NN
+DT -> 'the'
+NN -> 'artist'
+. -> '.'
+ROOT -> S
+S -> `` ADVP PRN `` NP VP . ''
+`` -> '``'
+ADVP -> RB
+RB -> 'Truly'
+PRN -> , S ,
+, -> ','
+S -> NP , '' NP VP
+NP -> PRP$ NNS
+PRP$ -> 'my'
+NNS -> 'friends'
+, -> ','
+'' -> "''"
+NP -> PRP
+PRP -> 'he'
+VP -> VBD
+VBD -> 'said'
+, -> ','
+`` -> '``'
+NP -> DT
+DT -> 'this'
+VP -> VBZ ADJP PP
+VBZ -> 'is'
+ADJP -> RB JJ PP
+RB -> 'as'
+JJ -> 'much'
+PP -> IN NP
+IN -> 'of'
+NP -> NP PP
+NP -> DT NN
+DT -> 'a'
+NN -> 'surprise'
+PP -> TO NP
+TO -> 'to'
+NP -> PRP
+PRP -> 'me'
+PP -> IN PP
+IN -> 'as'
+PP -> TO NP
+TO -> 'to'
+NP -> PRP
+PRP -> 'you'
+. -> '.'
+'' -> "''"
+ROOT -> S
+S -> CC ADVP NP VP .
+CC -> 'And'
+ADVP -> RB
+RB -> 'then'
+NP -> PRP
+PRP -> 'he'
+VP -> VP , CC VP
+VP -> VBD PP
+VBD -> 'called'
+PP -> TO NP
+TO -> 'to'
+NP -> PRP$ NN NN
+PRP$ -> 'his'
+NN -> 'head'
+NN -> 'servant'
+, -> ','
+CC -> 'and'
+VP -> VBD NP SBAR
+VBD -> 'asked'
+NP -> PRP
+PRP -> 'him'
+SBAR -> WHADVP S
+WHADVP -> WRB
+WRB -> 'where'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> VBD VP
+VBD -> 'had'
+VP -> VBN NP
+VBN -> 'found'
+NP -> ADJP DT NN
+ADJP -> IN JJ
+IN -> 'so'
+JJ -> 'wonderful'
+DT -> 'a'
+NN -> 'statue'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'It'
+VP -> VBD VP
+VBD -> 'was'
+VP -> VBN PP
+VBN -> 'carved'
+PP -> ADVP IN NP
+ADVP -> NP RB
+NP -> RB DT NN
+RB -> 'only'
+DT -> 'an'
+NN -> 'hour'
+RB -> 'ago'
+IN -> 'by'
+NP -> NP PP
+NP -> DT JJ NN
+DT -> 'a'
+JJ -> 'little'
+NN -> 'boy'
+PP -> IN NP
+IN -> 'in'
+NP -> DT NN
+DT -> 'the'
+NN -> 'kitchen'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> DT
+DT -> 'This'
+VP -> VBD SBAR
+VBD -> 'made'
+SBAR -> S
+S -> NP VP
+NP -> NP NNS
+NP -> DT NNP POS
+DT -> 'the'
+NNP -> 'Count'
+POS -> "'s"
+NNS -> 'friends'
+VP -> VBP ADVP ADVP
+VBP -> 'wonder'
+ADVP -> RB
+RB -> 'still'
+ADVP -> RBR
+RBR -> 'more'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> DT NN
+DT -> 'The'
+NN -> 'Count'
+VP -> VBD NP PP
+VBD -> 'bade'
+NP -> DT JJ NN
+DT -> 'the'
+JJ -> 'servant'
+NN -> 'call'
+PP -> NP IN NP
+NP -> DT NN
+DT -> 'the'
+NN -> 'boy'
+IN -> 'into'
+NP -> DT NN
+DT -> 'the'
+NN -> 'room'
+. -> '.'
+ROOT -> S
+S -> NP , NP VP .
+NP -> PRP$ NN
+PRP$ -> 'My'
+NN -> 'lad'
+, -> ','
+NP -> PRP
+PRP -> 'you'
+VP -> VBP VP
+VBP -> 'have'
+VP -> VBN NP
+VBN -> 'done'
+NP -> NP PP SBAR
+NP -> DT NN
+DT -> 'a'
+NN -> 'piece'
+PP -> IN NP
+IN -> 'of'
+NP -> NN
+NN -> 'work'
+SBAR -> WHPP S
+WHPP -> IN WHNP
+IN -> 'of'
+WHNP -> WDT
+WDT -> 'which'
+S -> NP VP
+NP -> DT JJS NNS
+DT -> 'the'
+JJS -> 'greatest'
+NNS -> 'artists'
+VP -> MD VP
+MD -> 'would'
+VP -> VB ADJP
+VB -> 'be'
+ADJP -> JJ
+JJ -> 'proud'
+. -> '.'
+ROOT -> SBARQ
+SBARQ -> SBARQ CC SBARQ
+SBARQ -> WHNP SQ
+WHNP -> WP
+WP -> 'What'
+SQ -> VBZ NP
+VBZ -> 'is'
+NP -> PRP$ NN
+PRP$ -> 'your'
+NN -> 'name'
+CC -> 'and'
+SBARQ -> WHNP SQ .
+WHNP -> WP
+WP -> 'who'
+SQ -> VBZ NP
+VBZ -> 'is'
+NP -> PRP$ NN
+PRP$ -> 'your'
+NN -> 'teacher'
+. -> '?'
+ROOT -> S
+S -> S CC S .
+S -> NP VP
+NP -> PRP$ NN
+PRP$ -> 'My'
+NN -> 'name'
+VP -> VBZ NP
+VBZ -> 'is'
+NP -> NNP NNP
+NNP -> 'Antonio'
+NNP -> 'Canova'
+CC -> 'and'
+S -> NP VP
+NP -> PRP
+PRP -> 'I'
+VP -> VBP VP
+VBP -> 'have'
+VP -> VBN NP
+VBN -> 'had'
+NP -> NP CC NP
+NP -> DT NN
+DT -> 'no'
+NN -> 'teacher'
+CC -> 'but'
+NP -> NP NP
+NP -> PRP$ NN
+PRP$ -> 'my'
+NN -> 'grandfather'
+NP -> DT NN
+DT -> 'the'
+NN -> 'stonecutter'
+. -> '.'
+ROOT -> S
+S -> PP NP VP .
+PP -> IN NP
+IN -> 'By'
+NP -> DT NN
+DT -> 'this'
+NN -> 'time'
+NP -> PDT DT NNS
+PDT -> 'all'
+DT -> 'the'
+NNS -> 'guests'
+VP -> VBD VP
+VBD -> 'had'
+VP -> VBN PP
+VBN -> 'crowded'
+PP -> IN NP
+IN -> 'around'
+NP -> NNP
+NNP -> 'Antonio'
+. -> '.'
+ROOT -> S
+S -> S , CC S .
+S -> NP VP
+NP -> EX
+EX -> 'There'
+VP -> VBD NP
+VBD -> 'were'
+NP -> NP PP
+NP -> JJ NNS
+JJ -> 'famous'
+NNS -> 'artists'
+PP -> IN NP
+IN -> 'among'
+NP -> PRP
+PRP -> 'them'
+, -> ','
+CC -> 'and'
+S -> NP VP
+NP -> PRP
+PRP -> 'they'
+VP -> VBD SBAR
+VBD -> 'knew'
+SBAR -> IN S
+IN -> 'that'
+S -> NP VP
+NP -> DT NN
+DT -> 'the'
+NN -> 'lad'
+VP -> VBD NP
+VBD -> 'was'
+NP -> DT NN
+DT -> 'a'
+NN -> 'genius'
+. -> '.'
+ROOT -> S
+S -> S : CC S : CC S .
+S -> NP VP
+NP -> PRP
+PRP -> 'They'
+VP -> MD RB VP
+MD -> 'could'
+RB -> 'not'
+VP -> VB NP PP
+VB -> 'say'
+NP -> RB
+RB -> 'enough'
+PP -> IN NP
+IN -> 'in'
+NP -> NP PP
+NP -> NN
+NN -> 'praise'
+PP -> IN NP
+IN -> 'of'
+NP -> PRP$ NN
+PRP$ -> 'his'
+NN -> 'work'
+: -> ';'
+CC -> 'and'
+S -> SBAR , NP VP
+SBAR -> WHADVP S
+WHADVP -> WRB
+WRB -> 'when'
+S -> PP NP VP
+PP -> IN NP
+IN -> 'at'
+NP -> JJ
+JJ -> 'last'
+NP -> PRP
+PRP -> 'they'
+VP -> VBD PRT PP
+VBD -> 'sat'
+PRT -> RP
+RP -> 'down'
+PP -> IN NP
+IN -> 'at'
+NP -> DT NN
+DT -> 'the'
+NN -> 'table'
+, -> ','
+NP -> NN
+NN -> 'nothing'
+VP -> MD VP
+MD -> 'would'
+VP -> VB NP ADVP SBAR
+VB -> 'please'
+NP -> PRP
+PRP -> 'them'
+ADVP -> CC
+CC -> 'but'
+SBAR -> IN S
+IN -> 'that'
+S -> NP VP
+NP -> NNP
+NNP -> 'Antonio'
+VP -> MD VP
+MD -> 'should'
+VP -> VB NP
+VB -> 'have'
+NP -> NP PP
+NP -> DT NN
+DT -> 'a'
+NN -> 'seat'
+PP -> IN NP
+IN -> 'with'
+NP -> PRP
+PRP -> 'them'
+: -> ';'
+CC -> 'and'
+S -> NP VP
+NP -> DT NN
+DT -> 'the'
+NN -> 'dinner'
+VP -> VBD VP
+VBD -> 'was'
+VP -> VBN NP
+VBN -> 'made'
+NP -> NP PP
+NP -> DT NN
+DT -> 'a'
+NN -> 'feast'
+PP -> IN NP
+IN -> 'in'
+NP -> PRP$ NN
+PRP$ -> 'his'
+NN -> 'honor'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> NP NP
+NP -> DT RB JJ NN
+DT -> 'The'
+RB -> 'very'
+JJ -> 'next'
+NN -> 'day'
+NP -> DT NNP
+DT -> 'the'
+NNP -> 'Count'
+VP -> VBD PP S
+VBD -> 'sent'
+PP -> IN NP
+IN -> 'for'
+NP -> NNP
+NNP -> 'Antonio'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB CC VB PP
+VB -> 'come'
+CC -> 'and'
+VB -> 'live'
+PP -> IN NP
+IN -> 'with'
+NP -> PRP
+PRP -> 'him'
+. -> '.'
+ROOT -> S
+S -> S : CC S .
+S -> NP VP
+NP -> NP PP
+NP -> DT JJS NNS
+DT -> 'The'
+JJS -> 'best'
+NNS -> 'artists'
+PP -> IN NP
+IN -> 'in'
+NP -> DT NN
+DT -> 'the'
+NN -> 'land'
+VP -> VBD VP
+VBD -> 'were'
+VP -> VBN S
+VBN -> 'employed'
+S -> VP
+VP -> TO VP
+TO -> 'to'
+VP -> VB NP NP
+VB -> 'teach'
+NP -> PRP
+PRP -> 'him'
+NP -> NP SBAR
+NP -> DT NN
+DT -> 'the'
+NN -> 'art'
+SBAR -> WHPP S
+WHPP -> IN WHNP
+IN -> 'in'
+WHNP -> WDT
+WDT -> 'which'
+S -> NP VP
+NP -> PRP
+PRP -> 'he'
+VP -> VBD VP
+VBD -> 'had'
+VP -> VBN NP
+VBN -> 'shown'
+NP -> ADJP NN
+ADJP -> RB JJ
+RB -> 'so'
+JJ -> 'much'
+NN -> 'skill'
+: -> ';'
+CC -> 'but'
+S -> ADVP , PP , NP VP
+ADVP -> RB
+RB -> 'now'
+, -> ','
+PP -> RB IN S
+RB -> 'instead'
+IN -> 'of'
+S -> VP
+VP -> VBG NP
+VBG -> 'carving'
+NP -> NN
+NN -> 'butter'
+, -> ','
+NP -> PRP
+PRP -> 'he'
+VP -> VBD NP
+VBD -> 'chiseled'
+NP -> NN
+NN -> 'marble'
+. -> '.'
+ROOT -> S
+S -> PP , NP VP .
+PP -> IN NP
+IN -> 'In'
+NP -> DT JJ NNS
+DT -> 'a'
+JJ -> 'few'
+NNS -> 'years'
+, -> ','
+NP -> NNP NNP
+NNP -> 'Antonio'
+NNP -> 'Canova'
+VP -> VBD VP
+VBD -> 'became'
+VP -> VBN PP
+VBN -> 'known'
+PP -> IN NP
+IN -> 'as'
+NP -> NP PP
+NP -> CD
+CD -> 'one'
+PP -> IN NP
+IN -> 'of'
+NP -> NP PP
+NP -> DT JJS NNS
+DT -> 'the'
+JJS -> 'greatest'
+NNS -> 'sculptors'
+PP -> IN NP
+IN -> 'in'
+NP -> DT NN
+DT -> 'the'
+NN -> 'world'
+. -> '.'
