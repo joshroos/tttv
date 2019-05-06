@@ -1,6 +1,3 @@
-ROOT -> FRAG
-ROOT -> INTJ
-ROOT -> NP
-ROOT -> S
-ROOT -> SBARQ
-ROOT -> SQ
+VBD -> 'lived'
+
+A good many years ago there lived in Italy a little boy whose name was Antonio Canova . 

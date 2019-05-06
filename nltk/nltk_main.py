@@ -110,7 +110,7 @@ def check_sentence(parser, sentence):
         sentence = sentence.split()
         print("here")
     tree_found = False
-    results = parser.parse(sentence)
+    results = parser.parse_one(sentence)
     for tree in results:
         tree_found = True
         print(tree)
@@ -123,9 +123,11 @@ def check_sentence(parser, sentence):
 def check_bool(parser, sentence):
     if isinstance(sentence, str):
         sentence = sentence.split()
-    results = parser.parse(sentence)
+    results = parser.parse_one(sentence)
     for tree in results:
+        print('True')
         return True
+    print('False')
     return False
 
 
@@ -166,16 +168,16 @@ tags, tagged_words = pos_tags(sentences)
 # write_grammar()
 
 rules = open('grammar_rules.txt').read()
+print(rules)
 cfg1 = CFG.fromstring(rules)
 cfg_1_parser = BottomUpLeftCornerChartParser(cfg1)
 
 num_trees = 0
 trees_found = 0
 print('here')
-check_sentence(cfg_1_parser, 'A good many years ago there lived in Italy a little boy whose name was Antonio Canova .')
 
-# for sentence in sentences:
-#     num_trees += 1
-#     if check_bool(cfg_1_parser, sentence):
-#         trees_found +=1
-#         print(trees_found)
+for sentence in sentences:
+    print(sentence)
+    num_trees += 1
+    if check_bool(cfg_1_parser, sentence):
+        trees_found +=1

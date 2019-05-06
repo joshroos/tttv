@@ -1,4 +1,33 @@
-
+ROOT -> S
+ROOT -> FRAG
+ROOT -> INTJ
+ROOT -> NP
+ROOT -> SBARQ
+ROOT -> SQ
+S -> ADVP CO NP VP SY
+S -> ADVP CO PP CO NP VP SY
+S -> ADVP NP VP
+S -> ADVP NP VP SY
+S -> CC ADVP CO SBAR CO NP VP SY
+S -> CC ADVP NP VP SY
+S -> CC NP CO SBAR CO NP VP SY
+S -> CC NP VP SY
+S -> IN NP VP SY
+S -> NP CO NP VP SY
+S -> NP ADVP VP
+S -> NP VP
+S -> NP VP SY
+S -> PP CO NP VP SY
+S -> PP NP VP
+S -> PP NP VP SY
+S -> RB NP VP SY
+S -> S CO CC S
+S -> S CO CC S SY
+S -> S CC S SY
+S -> SBAR CO NP VP
+S -> SBAR CO NP VP SY
+S -> VP
+S -> VP SY
 CO -> ','
 SY -> '!'
 SY -> '.'
@@ -23,15 +52,167 @@ ADVP -> NP RB
 ADVP -> RB
 ADVP -> RB PP
 ADVP -> RBR
-CC -> 'And'
-CC -> 'But'
-CC -> 'and'
-CC -> 'but'
-CC -> 'or'
-CD -> 'Two'
-CD -> 'hundred'
-CD -> 'one'
 CONJP -> RB RB IN
+FRAG -> ADJP SBAR SY
+FRAG -> ADVP SBAR SY
+FRAG -> WHADVP ADJP
+INTJ -> NN SY
+NP -> ADJP DT NN
+NP -> ADJP NN
+NP -> ADJP NNS
+NP -> CD
+NP -> CD CD NNS
+NP -> DT
+NP -> DT ADJP NN
+NP -> DT JJ
+NP -> DT JJ JJ NN
+NP -> DT JJ NN
+NP -> DT JJ NNS
+NP -> DT JJS NNS
+NP -> DT NN
+NP -> DT NN NN
+NP -> DT NN S
+NP -> DT NNP
+NP -> DT NNS
+NP -> DT NNS CC NNS
+NP -> DT RB JJ NN
+NP -> EX
+NP -> JJ
+NP -> JJ JJ NNS
+NP -> JJ NN
+NP -> JJ NNP NNP
+NP -> JJ NNS
+NP -> NN
+NP -> NN CC NN
+NP -> NN RB
+NP -> NNP
+NP -> NNP NNP
+NP -> NNS
+NP -> NP CO NP
+NP -> NP CC NP
+NP -> NP CC RB
+NP -> NP CONJP NP
+NP -> NP NP
+NP -> NP NP SY
+NP -> NP PP
+NP -> NP PP SBAR
+NP -> NP SBAR
+NP -> PDT DT NN
+NP -> PDT DT NNS
+NP -> PRP
+NP -> PRPS JJ NN
+NP -> PRPS JJ NNS
+NP -> PRPS NN
+NP -> PRPS NN NN
+NP -> PRPS NN S
+NP -> PRPS NNS
+NP -> PRPS NNS CC NNS
+NP -> RB
+NP -> RB DT NN
+NP -> RB PDT DT JJ NNS
+NP -> WP
+NP-TMP -> CD NN
+PP -> ADVP IN NP
+PP -> CC NP
+PP -> IN
+PP -> IN NP
+PP -> IN PP
+PP -> IN S
+PP -> NP IN NP
+PP -> RB IN S
+PP -> TO NP
+PRT -> RB
+PRT -> RP
+SBAR -> IN S
+SBAR -> S
+SBAR -> WHADVP S
+SBAR -> WHNP S
+SBAR -> WHPP S
+SBARQ -> SBARQ CC SBARQ
+SBARQ -> WHNP SQ
+SBARQ -> WHNP SQ SY
+SQ -> MD NP VP
+SQ -> MD NP VP SY
+SQ -> SBAR CO MD NP VP SY
+SQ -> VBP NP SBAR
+SQ -> VBP NP VP
+SQ -> VBZ NP
+UCP -> ADJP CO CC VP
+VP -> MD ADVP VP
+VP -> MD RB VP
+VP -> MD VP
+VP -> NN S
+VP -> NP ADJP
+VP -> TO VP
+VP -> VB
+VP -> VB ADJP
+VP -> VB ADJP PP SBAR
+VP -> VB CC VB NP
+VP -> VB CC VB PP
+VP -> VB NP
+VP -> VB NP ADVP
+VP -> VB NP ADVP SBAR
+VP -> VB NP NP
+VP -> VB NP PP
+VP -> VB PP
+VP -> VB PP PP
+VP -> VB PP SBAR
+VP -> VB PRT PP NP
+VP -> VB S
+VP -> VB SBAR
+VP -> VB VP
+VP -> VBD
+VP -> VBD ADJP
+VP -> VBD ADJP CO S
+VP -> VBD ADVP PP
+VP -> VBD ADVP SBAR
+VP -> VBD ADVP VP
+VP -> VBD NP
+VP -> VBD NP PP
+VP -> VBD NP SBAR
+VP -> VBD NP-TMP SBAR
+VP -> VBD PP
+VP -> VBD PP NP
+VP -> VBD PP PP
+VP -> VBD PP S
+VP -> VBD PP SBAR
+VP -> VBD PRT PP
+VP -> VBD RB ADJP
+VP -> VBD RB VP
+VP -> VBD S
+VP -> VBD SBAR
+VP -> VBD UCP
+VP -> VBD VP
+VP -> VBG
+VP -> VBG CC VBG NP
+VP -> VBG NP
+VP -> VBG NP PP
+VP -> VBG PP
+VP -> VBG S
+VP -> VBN
+VP -> VBN NP
+VP -> VBN NP PP
+VP -> VBN PP
+VP -> VBN PP CO ADJP
+VP -> VBN PP S
+VP -> VBN S
+VP -> VBN VP
+VP -> VBP ADVP ADVP
+VP -> VBP NP
+VP -> VBP PP
+VP -> VBP VP
+VP -> VBZ CO SBAR
+VP -> VBZ ADJP
+VP -> VBZ ADJP PP
+VP -> VBZ NP
+VP -> VP CO CC VP
+VP -> VP CC VP
+VP -> VP CC VP CO CC VP
+WHADVP -> WRB
+WHNP -> WDT
+WHNP -> WP
+WHNP -> WPS NN
+WHPP -> IN WHNP
 DT -> 'A'
 DT -> 'All'
 DT -> 'Some'
@@ -49,9 +230,14 @@ DT -> 'this'
 DT -> 'those'
 EX -> 'There'
 EX -> 'there'
-FRAG -> ADJP SBAR SY
-FRAG -> ADVP SBAR SY
-FRAG -> WHADVP ADJP
+CC -> 'And'
+CC -> 'But'
+CC -> 'and'
+CC -> 'but'
+CC -> 'or'
+CD -> 'Two'
+CD -> 'hundred'
+CD -> 'one'
 IN -> 'By'
 IN -> 'For'
 IN -> 'If'
@@ -82,7 +268,6 @@ IN -> 'until'
 IN -> 'upon'
 IN -> 'with'
 IN -> 'without'
-INTJ -> NN SY
 JJ -> 'angry'
 JJ -> 'beautiful'
 JJ -> 'busy'
@@ -239,73 +424,9 @@ NNS -> 'things'
 NNS -> 'towns'
 NNS -> 'ways'
 NNS -> 'years'
-NP -> ADJP DT NN
-NP -> ADJP NN
-NP -> ADJP NNS
-NP -> CD
-NP -> CD CD NNS
-NP -> DT
-NP -> DT ADJP NN
-NP -> DT JJ
-NP -> DT JJ JJ NN
-NP -> DT JJ NN
-NP -> DT JJ NNS
-NP -> DT JJS NNS
-NP -> DT NN
-NP -> DT NN NN
-NP -> DT NN S
-NP -> DT NNP
-NP -> DT NNS
-NP -> DT NNS CC NNS
-NP -> DT RB JJ NN
-NP -> EX
-NP -> JJ
-NP -> JJ JJ NNS
-NP -> JJ NN
-NP -> JJ NNP NNP
-NP -> JJ NNS
-NP -> NN
-NP -> NN CC NN
-NP -> NN RB
-NP -> NNP
-NP -> NNP NNP
-NP -> NNS
-NP -> NP CO NP
-NP -> NP CC NP
-NP -> NP CC RB
-NP -> NP CONJP NP
-NP -> NP NP
-NP -> NP NP SY
-NP -> NP PP
-NP -> NP PP SBAR
-NP -> NP SBAR
-NP -> PDT DT NN
-NP -> PDT DT NNS
-NP -> PRP
-NP -> PRPS JJ NN
-NP -> PRPS JJ NNS
-NP -> PRPS NN
-NP -> PRPS NN NN
-NP -> PRPS NN S
-NP -> PRPS NNS
-NP -> PRPS NNS CC NNS
-NP -> RB
-NP -> RB DT NN
-NP -> RB PDT DT JJ NNS
-NP -> WP
-NP-TMP -> CD NN
 PDT -> 'All'
 PDT -> 'all'
 PDT -> 'such'
-PP -> ADVP IN NP
-PP -> CC NP
-PP -> IN
-PP -> IN NP
-PP -> IN PP
-PP -> IN S
-PP -> NP IN NP
-PP -> RB IN S
-PP -> TO NP
 PRP -> 'He'
 PRP -> 'I'
 PRP -> 'It'
@@ -326,8 +447,6 @@ PRPS -> 'his'
 PRPS -> 'its'
 PRPS -> 'my'
 PRPS -> 'your'
-PRT -> RB
-PRT -> RP
 RB -> 'Certainly'
 RB -> 'Now'
 RB -> 'Perhaps'
@@ -354,54 +473,8 @@ RB -> 'up'
 RB -> 'very'
 RB -> 'well'
 RBR -> 'more'
-ROOT -> FRAG
-ROOT -> INTJ
-ROOT -> NP
-ROOT -> S
-ROOT -> SBARQ
-ROOT -> SQ
 RP -> 'down'
 RP -> 'up'
-S -> ADVP CO NP VP SY
-S -> ADVP CO PP CO NP VP SY
-S -> ADVP NP VP
-S -> ADVP NP VP SY
-S -> CC ADVP CO SBAR CO NP VP SY
-S -> CC ADVP NP VP SY
-S -> CC NP CO SBAR CO NP VP SY
-S -> CC NP VP SY
-S -> IN NP VP SY
-S -> NP CO NP VP SY
-S -> NP ADVP VP
-S -> NP VP
-S -> NP VP SY
-S -> PP CO NP VP SY
-S -> PP NP VP
-S -> PP NP VP SY
-S -> RB NP VP SY
-S -> S CO CC S
-S -> S CO CC S SY
-S -> S CC S SY
-S -> SBAR CO NP VP
-S -> SBAR CO NP VP SY
-S -> VP
-S -> VP SY
-SBAR -> IN S
-SBAR -> S
-SBAR -> WHADVP S
-SBAR -> WHNP S
-SBAR -> WHPP S
-SBARQ -> SBARQ CC SBARQ
-SBARQ -> WHNP SQ
-SBARQ -> WHNP SQ SY
-SQ -> MD NP VP
-SQ -> MD NP VP SY
-SQ -> SBAR CO MD NP VP SY
-SQ -> VBP NP SBAR
-SQ -> VBP NP VP
-SQ -> VBZ NP
-TO -> 'to'
-UCP -> ADJP CO CC VP
 VB -> 'Let'
 VB -> 'arrange'
 VB -> 'be'
@@ -496,84 +569,9 @@ VBP -> 'have'
 VBP -> 'talk'
 VBP -> 'wonder'
 VBZ -> 'is'
-VP -> MD ADVP VP
-VP -> MD RB VP
-VP -> MD VP
-VP -> NN S
-VP -> NP ADJP
-VP -> TO VP
-VP -> VB
-VP -> VB ADJP
-VP -> VB ADJP PP SBAR
-VP -> VB CC VB NP
-VP -> VB CC VB PP
-VP -> VB NP
-VP -> VB NP ADVP
-VP -> VB NP ADVP SBAR
-VP -> VB NP NP
-VP -> VB NP PP
-VP -> VB PP
-VP -> VB PP PP
-VP -> VB PP SBAR
-VP -> VB PRT PP NP
-VP -> VB S
-VP -> VB SBAR
-VP -> VB VP
-VP -> VBD
-VP -> VBD ADJP
-VP -> VBD ADJP CO S
-VP -> VBD ADVP PP
-VP -> VBD ADVP SBAR
-VP -> VBD ADVP VP
-VP -> VBD NP
-VP -> VBD NP PP
-VP -> VBD NP SBAR
-VP -> VBD NP-TMP SBAR
-VP -> VBD PP
-VP -> VBD PP NP
-VP -> VBD PP PP
-VP -> VBD PP S
-VP -> VBD PP SBAR
-VP -> VBD PRT PP
-VP -> VBD RB ADJP
-VP -> VBD RB VP
-VP -> VBD S
-VP -> VBD SBAR
-VP -> VBD UCP
-VP -> VBD VP
-VP -> VBG
-VP -> VBG CC VBG NP
-VP -> VBG NP
-VP -> VBG NP PP
-VP -> VBG PP
-VP -> VBG S
-VP -> VBN
-VP -> VBN NP
-VP -> VBN NP PP
-VP -> VBN PP
-VP -> VBN PP CO ADJP
-VP -> VBN PP S
-VP -> VBN S
-VP -> VBN VP
-VP -> VBP ADVP ADVP
-VP -> VBP NP
-VP -> VBP PP
-VP -> VBP VP
-VP -> VBZ CO SBAR
-VP -> VBZ ADJP
-VP -> VBZ ADJP PP
-VP -> VBZ NP
-VP -> VP CO CC VP
-VP -> VP CC VP
-VP -> VP CC VP CO CC VP
 WDT -> 'What'
 WDT -> 'that'
 WDT -> 'which'
-WHADVP -> WRB
-WHNP -> WDT
-WHNP -> WP
-WHNP -> WPS NN
-WHPP -> IN WHNP
 WP -> 'What'
 WP -> 'Who'
 WP -> 'what'
@@ -583,3 +581,5 @@ WRB -> 'How'
 WRB -> 'When'
 WRB -> 'when'
 WRB -> 'where'
+TO -> 'to'
+
