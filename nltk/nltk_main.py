@@ -159,25 +159,27 @@ def write_grammar():
 #     for sentence in generate(cfg, n=n):
 #         print(' '.join(sentence))
 
-txt = open('antonio_edited.txt').read()
-words = get_words(txt)
-sentences = get_sentences(txt)
-tags, tagged_words = pos_tags(sentences)
+if __name__ == "__main__":
 
-# extract_rules(sentences)
-# write_grammar()
+    txt = open('unparsed_sentences.txt').read()
+    words = get_words(txt)
+    sentences = get_sentences(txt)
+    tags, tagged_words = pos_tags(sentences)
 
-rules = open('grammar_rules.txt').read()
-print(rules)
-cfg1 = CFG.fromstring(rules)
-cfg_1_parser = BottomUpLeftCornerChartParser(cfg1)
+    # extract_rules(sentences)
+    # write_grammar()
 
-num_trees = 0
-trees_found = 0
-print('here')
+    rules = open('grammar_rules.txt').read()
+    print(rules)
+    cfg1 = CFG.fromstring(rules)
+    cfg_1_parser = BottomUpLeftCornerChartParser(cfg1)
 
-for sentence in sentences:
-    print(sentence)
-    num_trees += 1
-    if check_bool(cfg_1_parser, sentence):
-        trees_found +=1
+    num_trees = 0
+    trees_found = 0
+    print('here')
+
+    for sentence in sentences:
+        print(sentence)
+        num_trees += 1
+        if check_bool(cfg_1_parser, sentence):
+            trees_found +=1
