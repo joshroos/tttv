@@ -26,7 +26,7 @@ def get_wordnet_pos(treebank_tag):
 
 def get_words(txt):
     regex = RegexpTokenizer(r'\w+')
-    return [w.lower() for w in regex.tokenize(txt)]
+    return [w for w in regex.tokenize(txt)]
 
 
 def get_sentences(txt):
@@ -153,6 +153,10 @@ def write_grammar():
     file_out.close()
 
 
+# def generate_sentences(cfg, n):
+#     for sentence in generate(cfg, n=n):
+#         print(' '.join(sentence))
+
 txt = open('antonio_edited.txt').read()
 words = get_words(txt)
 sentences = get_sentences(txt)
@@ -167,8 +171,11 @@ cfg_1_parser = BottomUpLeftCornerChartParser(cfg1)
 
 num_trees = 0
 trees_found = 0
+print('here')
+check_sentence(cfg_1_parser, 'A good many years ago there lived in Italy a little boy whose name was Antonio Canova .')
 
-for sentence in sentences:
-    num_trees += 1
-    if check_bool(cfg_1_parser, sentence):
-        trees_found +=1
+# for sentence in sentences:
+#     num_trees += 1
+#     if check_bool(cfg_1_parser, sentence):
+#         trees_found +=1
+#         print(trees_found)

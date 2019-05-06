@@ -511,26 +511,28 @@ NP -> PRP
 PRP -> 'him'
 . -> '.'
 ROOT -> S
-S -> RB NP VP .
+S -> ADVP NP VP .
+ADVP -> RB
 RB -> 'Then'
-NP -> NP NN
-NP -> NNP POS
+NP -> NP NP
+NP -> NNP
 NNP -> 'Antonio'
-POS -> "'s"
+NP -> PRP$ NN
+PRP$ -> 'his'
 NN -> 'grandfather'
 VP -> MD VP
 MD -> 'would'
-VP -> VB PRT PP
+VP -> VB PRT PP NP
 VB -> 'go'
 PRT -> RP
 RP -> 'up'
 PP -> TO NP
 TO -> 'to'
-NP -> NP NN S
-NP -> DT NN POS
+NP -> DT NN
 DT -> 'the'
 NN -> 'Count'
-POS -> "'s"
+NP -> PRP$ NN S
+PRP$ -> 'his'
 NN -> 'house'
 S -> VP
 VP -> TO VP
@@ -593,11 +595,12 @@ PRP$ -> 'his'
 NN -> 'grandfather'
 PP -> TO NP
 TO -> 'to'
-NP -> NP JJ NN
-NP -> DT NN POS
+NP -> NP NP
+NP -> DT NN
 DT -> 'the'
 NN -> 'Count'
-POS -> "'s"
+NP -> PRP$ JJ NN
+PRP$ -> 'his'
 JJ -> 'great'
 NN -> 'house'
 . -> '.'
@@ -635,7 +638,8 @@ JJ -> 'grand'
 NN -> 'feast'
 . -> '.'
 ROOT -> S
-S -> S , CC S : CC S .
+S -> S , CC S .
+S -> S , CC S
 S -> NP VP
 NP -> DT NN
 DT -> 'The'
@@ -667,7 +671,7 @@ IN -> 'on'
 NP -> DT NN
 DT -> 'the'
 NN -> 'table'
-: -> ';'
+, -> ','
 CC -> 'but'
 S -> S , CC S
 S -> NP VP
@@ -1031,21 +1035,10 @@ DT -> 'the'
 NN -> 'table'
 . -> '?'
 ROOT -> S
-S -> `` ADVP , '' VP . ''
-`` -> '``'
+S -> ADVP , NP VP .
 ADVP -> RB
 RB -> 'Certainly'
 , -> ','
-'' -> "''"
-VP -> VBD NP
-VBD -> 'said'
-NP -> NP : `` S
-NP -> DT NN
-DT -> 'the'
-NN -> 'man'
-: -> ';'
-`` -> '``'
-S -> NP VP
 NP -> DT
 DT -> 'that'
 VP -> VBZ , SBAR
@@ -1070,7 +1063,6 @@ CC -> 'and'
 NP -> NN
 NN -> 'height'
 . -> '.'
-'' -> "''"
 ROOT -> SQ
 SQ -> MD NP VP .
 MD -> 'Will'
@@ -1149,11 +1141,8 @@ NP -> NNS
 NNS -> 'statues'
 PP -> IN NP
 IN -> 'on'
-NP -> NP NN
-NP -> DT NN POS
-DT -> 'an'
-NN -> 'hour'
-POS -> "'s"
+NP -> JJ NN
+JJ -> 'short'
 NN -> 'notice'
 . -> '?'
 ROOT -> S
@@ -1318,8 +1307,7 @@ DT -> 'this'
 NN -> 'butter'
 . -> '.'
 ROOT -> S
-S -> S : CC S .
-S -> PP NP VP
+S -> PP NP VP .
 PP -> IN NP
 IN -> 'In'
 NP -> DT JJ NNS
@@ -1346,11 +1334,11 @@ NP -> DT JJ NN
 DT -> 'a'
 JJ -> 'crouching'
 NN -> 'lion'
-: -> ';'
-CC -> 'and'
-S -> NP VP
+. -> '.'
+ROOT -> S
+S -> NP VP .
 NP -> PDT DT NNS
-PDT -> 'all'
+PDT -> 'All'
 DT -> 'the'
 NNS -> 'servants'
 VP -> VBN PP S
@@ -1592,24 +1580,15 @@ DT -> 'the'
 NN -> 'artist'
 . -> '.'
 ROOT -> S
-S -> `` ADVP PRN `` NP VP . ''
-`` -> '``'
+S -> ADVP , NP VP .
 ADVP -> RB
 RB -> 'Truly'
-PRN -> , S ,
 , -> ','
-S -> NP , '' NP VP
+NP -> NP , NP
 NP -> PRP$ NNS
 PRP$ -> 'my'
 NNS -> 'friends'
 , -> ','
-'' -> "''"
-NP -> PRP
-PRP -> 'he'
-VP -> VBD
-VBD -> 'said'
-, -> ','
-`` -> '``'
 NP -> DT
 DT -> 'this'
 VP -> VBZ ADJP PP
@@ -1634,7 +1613,6 @@ TO -> 'to'
 NP -> PRP
 PRP -> 'you'
 . -> '.'
-'' -> "''"
 ROOT -> S
 S -> CC ADVP NP VP .
 CC -> 'And'
@@ -1705,15 +1683,16 @@ ROOT -> S
 S -> NP VP .
 NP -> DT
 DT -> 'This'
-VP -> VBD SBAR
+VP -> VBD NP
 VBD -> 'made'
+NP -> NP SBAR
+NP -> DT NN
+DT -> 'the'
+NN -> 'Count'
 SBAR -> S
 S -> NP VP
-NP -> NP NNS
-NP -> DT NNP POS
-DT -> 'the'
-NNP -> 'Count'
-POS -> "'s"
+NP -> PRP$ NNS
+PRP$ -> 'his'
 NNS -> 'friends'
 VP -> VBP ADVP ADVP
 VBP -> 'wonder'
@@ -1886,8 +1865,7 @@ DT -> 'a'
 NN -> 'genius'
 . -> '.'
 ROOT -> S
-S -> S : CC S : CC S .
-S -> NP VP
+S -> NP VP .
 NP -> PRP
 PRP -> 'They'
 VP -> MD RB VP
@@ -1907,12 +1885,12 @@ IN -> 'of'
 NP -> PRP$ NN
 PRP$ -> 'his'
 NN -> 'work'
-: -> ';'
-CC -> 'and'
-S -> SBAR , NP VP
+. -> '.'
+ROOT -> S
+S -> SBAR , NP VP .
 SBAR -> WHADVP S
 WHADVP -> WRB
-WRB -> 'when'
+WRB -> 'When'
 S -> PP NP VP
 PP -> IN NP
 IN -> 'at'
@@ -1957,11 +1935,11 @@ PP -> IN NP
 IN -> 'with'
 NP -> PRP
 PRP -> 'them'
-: -> ';'
-CC -> 'and'
-S -> NP VP
+. -> '.'
+ROOT -> S
+S -> NP VP .
 NP -> DT NN
-DT -> 'the'
+DT -> 'The'
 NN -> 'dinner'
 VP -> VBD VP
 VBD -> 'was'
@@ -2007,8 +1985,7 @@ NP -> PRP
 PRP -> 'him'
 . -> '.'
 ROOT -> S
-S -> S : CC S .
-S -> NP VP
+S -> NP VP .
 NP -> NP PP
 NP -> DT JJS NNS
 DT -> 'The'
@@ -2051,11 +2028,11 @@ ADJP -> RB JJ
 RB -> 'so'
 JJ -> 'much'
 NN -> 'skill'
-: -> ';'
-CC -> 'but'
-S -> ADVP , PP , NP VP
+. -> '.'
+ROOT -> S
+S -> ADVP , PP , NP VP .
 ADVP -> RB
-RB -> 'now'
+RB -> 'Now'
 , -> ','
 PP -> RB IN S
 RB -> 'instead'
