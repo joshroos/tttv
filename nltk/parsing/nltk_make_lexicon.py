@@ -82,7 +82,7 @@ def make_lexicon(tagged_words):
     return lexicon
 
 
-txt = open('antonio.txt').read()
+txt = open('../antonio_edited.txt').read()
 words = get_words(txt)
 sentences = get_sentences(txt)
 tags, tagged_words = pos_tags(sentences)

@@ -8,8 +8,8 @@ from random import choices
 from random import sample
 
 MT = 1
-N_SEN = 10
-grammar_path = "../grammar_rules_2.txt"
+N_SEN = 50
+grammar_path = "../grammars/grammar_pcfg.txt"
 
 demo_pcfg = PCFG.fromstring("""
     S -> VP          [0.25]
@@ -74,16 +74,17 @@ def generate_corpus(grammar, prod = None):
 
 if __name__ == "__main__":
     rules = open(grammar_path).read()
-    grammar = CFG.fromstring(rules)
+    grammar = PCFG.fromstring(rules)
 
     if MT == 1:
-        sentences = [next(generate_corpus(grammar)) for s in range(N_SEN)]
+        sentences = [next(generate_corpus(grammar, Nonterminal('S'))) for s in range(70)]
+        sentences = sample([s for s in sentences if len(s) < 15], N_SEN)
         for s in sentences:
             print(' '.join(s))
         # print(sentences)
     
     if MT == 2:
-        sentences = sample([s for s in generate(grammar, depth = 6, n = 2 * N_SEN)], N_SEN)
+        sentences = sample([s for s in generate(grammar, start=Nonterminal('S'), depth = 8, n = 5000)], N_SEN)
         for s in sentences:
-            print(' '.join(s))
+            print(' '.join(s).lower())
         # print(sentences)

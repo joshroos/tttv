@@ -3,13 +3,13 @@ import nltk
 from nltk import Tree
 from stanfordcorenlp import StanfordCoreNLP
 
-txt = open('antonio_edited.txt').read()
+txt = open('../antonio_edited.txt').read()
 
 sentences = nl.get_sentences(txt)
 
 def extract_rules(sentences):
     nlp = StanfordCoreNLP('http://localhost', port=9000, timeout=30000)
-    file_in = open('grammar_pcfg.txt', "w")
+    file_in = open('../grammars/grammar_pcfg.txt', "w")
     all_rules = []
     all_tags = []
     count_tags = {}
@@ -34,11 +34,11 @@ def extract_rules(sentences):
 
 
 def write_grammar():
-    file_in = open('grammar_pcfg.txt', "r")
+    file_in = open('../grammars/grammar_pcfg.txt', "r")
     rules = file_in.read()
     rules = sorted(set(rules.split('\n')))
     file_in.close()
-    file_out = open('grammar_rules_pcfg.txt', "w")
+    file_out = open('../grammars/grammar_rules_pcfg.txt', "w")
     for rule in rules:
         file_out.write(rule + '\n')
     file_out.close()

@@ -6,5 +6,7 @@ ook Direct quotations weggehaald voor versimpeling
 eerste zin aangepast omdat die te lang duurde om te parsen vanwege veel verschillende parse trees
 kommas die niet nodig zijn weggehaald of lange zinnen met komma's
 komma's die niet twee aparte zinnen opdelen
+alle komma's verwijderd
+bijzinnen die lastig waren eruit gehaald bij lange zinnen
 
 WAT VALT OP: parsen duurt lang voor zinnen waar twee keer 'S' in staat. 

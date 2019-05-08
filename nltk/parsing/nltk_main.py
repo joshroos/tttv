@@ -5,7 +5,7 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import wordnet
 from nltk import Tree
-from nltk import CFG
+from nltk import CFG, PCFG
 from nltk.parse import RecursiveDescentParser, ShiftReduceParser, BottomUpLeftCornerChartParser
 from stanfordcorenlp import StanfordCoreNLP
 
@@ -135,7 +135,7 @@ def check_bool(parser, sentence):
 def extract_rules(sentences):
     nlp = StanfordCoreNLP('http://localhost', port=9000, timeout=30000)
     
-    file_in = open('grammar.txt', "w")
+    file_in = open('../grammars/grammar.txt', "w")
     for sentence in sentences:
         parsed = nlp.parse(sentence)
         t = Tree.fromstring(parsed)
@@ -146,11 +146,11 @@ def extract_rules(sentences):
 
 
 def write_grammar():
-    file_in = open('grammar.txt', "r")
+    file_in = open('../grammars/grammar.txt', "r")
     rules = file_in.read()
     rules = sorted(set(rules.split('\n')))
     file_in.close()
-    file_out = open('grammar_rules_2.txt', "w")
+    file_out = open('../grammars/grammar_rules_2.txt', "w")
     for rule in rules:
         file_out.write(rule + '\n')
     file_out.close()
@@ -162,7 +162,7 @@ def write_grammar():
 
 if __name__ == "__main__":
 
-    txt = open('antonio_edited.txt').read()
+    txt = open('../antonio_edited.txt').read()
     words = get_words(txt)
     sentences = get_sentences(txt)
     tags, tagged_words = pos_tags(sentences)
@@ -170,9 +170,9 @@ if __name__ == "__main__":
     #extract_rules(sentences)
     #write_grammar()
 
-    rules = open('grammar_rules_2.txt').read()
+    rules = open('../grammars/grammar_pcfg.txt').read()
     print(rules)
-    cfg1 = CFG.fromstring(rules)
+    cfg1 = PCFG.fromstring(rules)
     cfg_1_parser = BottomUpLeftCornerChartParser(cfg1)
 
     num_trees = 0

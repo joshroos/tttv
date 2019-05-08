@@ -4,29 +4,23 @@ ROOT -> NP
 ROOT -> S
 ROOT -> SBARQ
 ROOT -> SQ
-S -> ADVP NP VP
+RP -> 'up'
 S -> ADVP NP VP SY
 S -> CC NP VP SY
 S -> IN NP VP SY
 S -> NP ADVP VP
+S -> NP ADVP VP SY
 S -> NP VP
 S -> NP VP SY
-S -> NP-TMP CO SBAR CO NP VP SY
-S -> PP CO NP ADVP VP SY
-S -> PP NP VP
+S -> NP-TMP NP VP SY
 S -> PP NP VP SY
 S -> RB NP VP SY
-S -> RB S CC S SY
-S -> S CC S SY
-S -> SBAR CO NP VP SY
 S -> VP
 S -> VP SY
-CO -> ','
+S -> S CC S SY
 SY -> '!'
 SY -> '.'
 SY -> '?'
-ADJP -> ADJP PP
-ADJP -> ADJP S
 ADJP -> IN JJ
 ADJP -> JJ
 ADJP -> JJ SY
@@ -39,168 +33,14 @@ ADJP -> NP JJR
 ADJP -> RB JJ
 ADJP -> RB JJ PP
 ADJP -> WHADVP JJ
+ADJP -> ADJP PP
+ADJP -> ADJP S
 ADVP -> CC
 ADVP -> NP IN
 ADVP -> NP RB
 ADVP -> RB
 ADVP -> RB PP
 ADVP -> RBR
-FRAG -> ADJP SBAR SY
-FRAG -> ADVP SBAR SY
-FRAG -> WHADVP ADJP
-INTJ -> NN SY
-NP -> ADJP DT NN
-NP -> ADJP NN
-NP -> ADJP NNS
-NP -> CD
-NP -> CD CD NNS
-NP -> DT
-NP -> DT ADJP NN
-NP -> DT JJ JJ NN
-NP -> DT JJ NN
-NP -> DT JJ NNS
-NP -> DT JJS NNS
-NP -> DT NN
-NP -> DT NN NN
-NP -> DT NN S
-NP -> DT NNP
-NP -> DT NNS
-NP -> DT NNS CC NNS
-NP -> DT RB JJ NN
-NP -> EX
-NP -> JJ
-NP -> JJ JJ NNS
-NP -> JJ NN
-NP -> JJ NNP NNP
-NP -> JJ NNS
-NP -> NN
-NP -> NN CC NN
-NP -> NN RB
-NP -> NNP
-NP -> NNP NNP
-NP -> NNS
-NP -> NP CC NP
-NP -> NP CC RB
-NP -> NP NP
-NP -> NP NP SY
-NP -> NP PP
-NP -> NP PP SBAR
-NP -> NP SBAR
-NP -> PDT DT JJ NNS
-NP -> PDT DT NN
-NP -> PDT DT NNS
-NP -> PRP
-NP -> PRPS JJ NN
-NP -> PRPS JJ NNS
-NP -> PRPS NN
-NP -> PRPS NN NN
-NP -> PRPS NNS
-NP -> RB
-NP -> RB DT NN
-NP -> WP
-NP-TMP -> CD NN
-NP-TMP -> DT JJ NN
-NP-TMP -> NN
-PP -> ADVP IN NP
-PP -> CC NP
-PP -> IN
-PP -> IN ADJP
-PP -> IN NP
-PP -> IN PP
-PP -> IN S
-PP -> NP IN NP
-PP -> RB IN S
-PP -> TO NP
-PRT -> RB
-PRT -> RP
-SBAR -> IN S
-SBAR -> S
-SBAR -> WHADVP S
-SBAR -> WHNP S
-SBAR -> WHPP S
-SBARQ -> SBARQ CC SBARQ
-SBARQ -> WHNP SQ
-SBARQ -> WHNP SQ SY
-SQ -> MD NP VP
-SQ -> MD NP VP SY
-SQ -> SBAR CO MD NP VP SY
-SQ -> VBP NP SBAR
-SQ -> VBP NP VP
-SQ -> VBZ NP
-UCP -> ADJP CC VP
-VP -> MD ADVP VP
-VP -> MD RB VP
-VP -> MD VP
-VP -> NN S
-VP -> NP ADJP
-VP -> TO VP
-VP -> VB
-VP -> VB ADJP
-VP -> VB ADJP PP SBAR
-VP -> VB CC VB NP
-VP -> VB CC VB PP
-VP -> VB NP
-VP -> VB NP ADVP
-VP -> VB NP ADVP SBAR
-VP -> VB NP NP
-VP -> VB NP PP
-VP -> VB PP
-VP -> VB PP PP
-VP -> VB PP SBAR
-VP -> VB PRT PP
-VP -> VB S
-VP -> VB SBAR
-VP -> VB VP
-VP -> VBD
-VP -> VBD ADJP
-VP -> VBD ADVP PP
-VP -> VBD ADVP SBAR
-VP -> VBD ADVP VP
-VP -> VBD NP
-VP -> VBD NP PP
-VP -> VBD NP SBAR
-VP -> VBD NP-TMP SBAR
-VP -> VBD PP
-VP -> VBD PP NP
-VP -> VBD PP PP
-VP -> VBD PP S
-VP -> VBD PP SBAR
-VP -> VBD PRT PP
-VP -> VBD RB ADJP
-VP -> VBD RB VP
-VP -> VBD S
-VP -> VBD SBAR
-VP -> VBD UCP
-VP -> VBD VP
-VP -> VBG
-VP -> VBG CC VBG NP
-VP -> VBG NP
-VP -> VBG NP PP
-VP -> VBG NP-TMP
-VP -> VBG PP
-VP -> VBG S
-VP -> VBN
-VP -> VBN NP
-VP -> VBN NP PP
-VP -> VBN PP
-VP -> VBN PP PP
-VP -> VBN PP S
-VP -> VBN S
-VP -> VBN VP
-VP -> VBP ADVP ADVP
-VP -> VBP NP
-VP -> VBP PP
-VP -> VBP VP
-VP -> VBZ ADJP
-VP -> VBZ ADJP PP
-VP -> VBZ NP
-VP -> VP CC VP
-WHADVP -> WRB
-WHNP -> WDT
-WHNP -> WP
-WHNP -> WPS NN
-WHPP -> IN WHNP
-
 CC -> 'But'
 CC -> 'and'
 CC -> 'but'
@@ -223,13 +63,13 @@ DT -> 'this'
 DT -> 'those'
 EX -> 'There'
 EX -> 'there'
+FRAG -> ADJP SBAR SY
+FRAG -> ADVP SBAR SY
+FRAG -> WHADVP ADJP
 IN -> 'By'
 IN -> 'For'
-IN -> 'If'
 IN -> 'In'
 IN -> 'On'
-IN -> 'Since'
-IN -> 'While'
 IN -> 'With'
 IN -> 'after'
 IN -> 'ago'
@@ -253,6 +93,7 @@ IN -> 'until'
 IN -> 'upon'
 IN -> 'with'
 IN -> 'without'
+INTJ -> NN SY
 JJ -> 'Many'
 JJ -> 'angry'
 JJ -> 'beautiful'
@@ -264,13 +105,11 @@ JJ -> 'delighted'
 JJ -> 'enough'
 JJ -> 'famous'
 JJ -> 'few'
-JJ -> 'fine'
 JJ -> 'first'
 JJ -> 'fresh'
 JJ -> 'grand'
 JJ -> 'great'
 JJ -> 'large'
-JJ -> 'last'
 JJ -> 'little'
 JJ -> 'many'
 JJ -> 'much'
@@ -299,6 +138,7 @@ JJR -> 'handsomer'
 JJR -> 'prettier'
 JJS -> 'best'
 JJS -> 'greatest'
+MD -> 'Could'
 MD -> 'Will'
 MD -> 'can'
 MD -> 'could'
@@ -309,6 +149,7 @@ MD -> 'would'
 NN -> 'Count'
 NN -> 'None'
 NN -> 'Nonsense'
+NN -> 'Nothing'
 NN -> 'art'
 NN -> 'artist'
 NN -> 'boy'
@@ -317,7 +158,6 @@ NN -> 'call'
 NN -> 'center'
 NN -> 'city'
 NN -> 'clay'
-NN -> 'cook'
 NN -> 'crash'
 NN -> 'dairy'
 NN -> 'day'
@@ -408,9 +248,70 @@ NNS -> 'things'
 NNS -> 'towns'
 NNS -> 'ways'
 NNS -> 'years'
+NP -> ADJP DT NN
+NP -> ADJP NN
+NP -> ADJP NNS
+NP -> CD
+NP -> CD CD NNS
+NP -> DT
+NP -> DT ADJP NN
+NP -> DT JJ JJ NN
+NP -> DT JJ NN
+NP -> DT JJ NNS
+NP -> DT JJS NNS
+NP -> DT NN
+NP -> DT NN NN
+NP -> DT NN S
+NP -> DT NNP
+NP -> DT NNS
+NP -> DT NNS CC NNS
+NP -> DT RB JJ NN
+NP -> EX
+NP -> JJ JJ NNS
+NP -> JJ NN
+NP -> JJ NNP NNP
+NP -> JJ NNS
+NP -> NN
+NP -> NN CC NN
+NP -> NN RB
+NP -> NNP
+NP -> NNP NNP
+NP -> NNS
+NP -> PDT DT JJ NNS
+NP -> PDT DT NN
+NP -> PDT DT NNS
+NP -> PRP
+NP -> PRPS JJ NN
+NP -> PRPS JJ NNS
+NP -> PRPS NN
+NP -> PRPS NN NN
+NP -> PRPS NNS
+NP -> RB
+NP -> RB DT NN
+NP -> WP
+NP -> NP CC NP
+NP -> NP CC RB
+NP -> NP NP
+NP -> NP NP SY
+NP -> NP PP
+NP -> NP PP SBAR
+NP -> NP SBAR
+NP-TMP -> CD NN
+NP-TMP -> DT JJ NN
+NP-TMP -> NN
 PDT -> 'All'
 PDT -> 'all'
 PDT -> 'such'
+PP -> ADVP IN NP
+PP -> CC NP
+PP -> IN
+PP -> IN ADJP
+PP -> IN NP
+PP -> IN S
+PP -> NP IN NP
+PP -> RB IN S
+PP -> TO NP
+PP -> IN PP
 PRP -> 'He'
 PRP -> 'I'
 PRP -> 'It'
@@ -432,8 +333,8 @@ PRPS -> 'his'
 PRPS -> 'its'
 PRPS -> 'my'
 PRPS -> 'your'
+PRT -> RP
 RB -> 'Certainly'
-RB -> 'Instead'
 RB -> 'Now'
 RB -> 'Perhaps'
 RB -> 'Sometimes'
@@ -444,6 +345,7 @@ RB -> 'back'
 RB -> 'else'
 RB -> 'enough'
 RB -> 'ever'
+RB -> 'instead'
 RB -> 'just'
 RB -> 'nicely'
 RB -> 'not'
@@ -456,9 +358,21 @@ RB -> 'up'
 RB -> 'very'
 RB -> 'well'
 RBR -> 'more'
-RP -> 'down'
-RP -> 'up'
+SBAR -> IN S
+SBAR -> S
+SBAR -> WHADVP S
+SBAR -> WHNP S
+SBAR -> WHPP S
+SBARQ -> WHNP SQ
+SBARQ -> WHNP SQ SY
+SBARQ -> SBARQ CC SBARQ
+SQ -> MD NP VP
+SQ -> MD NP VP SY
+SQ -> VBP NP SBAR
+SQ -> VBP NP VP
+SQ -> VBZ NP
 TO -> 'to'
+UCP -> ADJP CC VP
 VB -> 'Let'
 VB -> 'arrange'
 VB -> 'be'
@@ -515,10 +429,10 @@ VBD -> 'liked'
 VBD -> 'lived'
 VBD -> 'made'
 VBD -> 'rushed'
-VBD -> 'sat'
 VBD -> 'saw'
 VBD -> 'sent'
 VBD -> 'showed'
+VBD -> 'tried'
 VBD -> 'was'
 VBD -> 'weighed'
 VBD -> 'went'
@@ -546,23 +460,93 @@ VBN -> 'had'
 VBN -> 'known'
 VBN -> 'made'
 VBN -> 'molded'
-VBN -> 'shown'
 VBP -> 'am'
 VBP -> 'are'
 VBP -> 'have'
 VBP -> 'talk'
 VBP -> 'wonder'
 VBZ -> 'is'
+VP -> NN S
+VP -> NP ADJP
+VP -> VB
+VP -> VB ADJP
+VP -> VB ADJP PP SBAR
+VP -> VB CC VB NP
+VP -> VB CC VB PP
+VP -> VB NP
+VP -> VB NP ADVP
+VP -> VB NP ADVP SBAR
+VP -> VB NP NP
+VP -> VB NP PP
+VP -> VB NP SBAR
+VP -> VB PP
+VP -> VB PP PP
+VP -> VB PRT PP
+VP -> VB S
+VP -> VB SBAR
+VP -> VBD
+VP -> VBD ADJP
+VP -> VBD ADVP
+VP -> VBD ADVP PP
+VP -> VBD ADVP SBAR
+VP -> VBD NP
+VP -> VBD NP PP
+VP -> VBD NP PP SBAR
+VP -> VBD NP SBAR
+VP -> VBD NP-TMP SBAR
+VP -> VBD PP
+VP -> VBD PP NP
+VP -> VBD PP PP
+VP -> VBD PP S
+VP -> VBD PP SBAR
+VP -> VBD RB ADJP
+VP -> VBD RB VP
+VP -> VBD S
+VP -> VBD SBAR
+VP -> VBD UCP
+VP -> VBG
+VP -> VBG CC VBG NP
+VP -> VBG NP
+VP -> VBG NP PP
+VP -> VBG NP-TMP
+VP -> VBG PP
+VP -> VBG S
+VP -> VBN
+VP -> VBN NP
+VP -> VBN NP PP
+VP -> VBN PP
+VP -> VBN PP PP
+VP -> VBN PP S
+VP -> VBN S
+VP -> VBP ADVP ADVP
+VP -> VBP NP
+VP -> VBP PP
+VP -> VBZ ADJP
+VP -> VBZ ADJP PP
+VP -> VBZ NP
+VP -> VP CC VP
+VP -> MD ADVP VP
+VP -> MD RB VP
+VP -> MD VP
+VP -> TO VP
+VP -> VB VP
+VP -> VBD ADVP VP
+VP -> VBD VP
+VP -> VBN VP
+VP -> VBP VP
 WDT -> 'What'
 WDT -> 'that'
 WDT -> 'which'
+WHADVP -> WRB
+WHNP -> WDT
+WHNP -> WP
+WHNP -> WPS NN
+WHPP -> IN WHNP
 WP -> 'What'
 WP -> 'Who'
 WP -> 'what'
 WP -> 'who'
 WPS -> 'whose'
 WRB -> 'How'
-WRB -> 'When'
 WRB -> 'when'
 WRB -> 'where'
-
