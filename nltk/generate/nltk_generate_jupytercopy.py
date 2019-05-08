@@ -5,6 +5,10 @@ from nltk.grammar import Nonterminal
 from nltk.parse import ViterbiParser
 from nltk.parse.generate import generate
 from random import choices
+from random import sample
+
+MT = 1
+grammar_path = ""
 
 demo_pcfg = PCFG.fromstring("""
     S -> VP          [0.25]
@@ -66,9 +70,15 @@ def generate_phrase(grammar, prod = None):
 def generate_corpus(grammar, prod = None):
     yield list(generate_phrase(grammar, prod))
 
-rules = open('grammar_rules_reduced.txt').read()
-grammar = CFG.fromstring(rules)
-# sentence = next(generate_corpus(grammar))
-# print(sentence)
-sentences = [next(generate_corpus(grammar)) for s in range(10)]
-print(sentences)
+
+if __name__ == "__main__":
+    rules = open(grammar_path).read()
+    grammar = CFG.fromstring(rules)
+
+    if MT == 1:
+        sentences = [next(generate_corpus(grammar)) for s in range(10)]
+        print(sentences)
+    
+    if MT == 2:
+        s = sample([s for s in generate(grammar, depth = 6)], 10)
+        print(s)
