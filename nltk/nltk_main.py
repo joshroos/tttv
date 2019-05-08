@@ -124,9 +124,10 @@ def check_bool(parser, sentence):
     if isinstance(sentence, str):
         sentence = sentence.split()
     results = parser.parse_one(sentence)
-    for tree in results:
-        print('True')
-        return True
+    if results:
+        for tree in results:
+            print('True')
+            return True
     print('False')
     return False
 
@@ -149,7 +150,7 @@ def write_grammar():
     rules = file_in.read()
     rules = sorted(set(rules.split('\n')))
     file_in.close()
-    file_out = open('grammar_rules.txt', "w")
+    file_out = open('grammar_rules_2.txt', "w")
     for rule in rules:
         file_out.write(rule + '\n')
     file_out.close()
@@ -166,10 +167,10 @@ if __name__ == "__main__":
     sentences = get_sentences(txt)
     tags, tagged_words = pos_tags(sentences)
 
-    # extract_rules(sentences)
-    # write_grammar()
+    #extract_rules(sentences)
+    #write_grammar()
 
-    rules = open('grammar_rules.txt').read()
+    rules = open('grammar_rules_2.txt').read()
     print(rules)
     cfg1 = CFG.fromstring(rules)
     cfg_1_parser = BottomUpLeftCornerChartParser(cfg1)
