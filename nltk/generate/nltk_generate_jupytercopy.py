@@ -8,7 +8,8 @@ from random import choices
 from random import sample
 
 MT = 1
-grammar_path = ""
+N_SEN = 10
+grammar_path = "../grammar_rules_2.txt"
 
 demo_pcfg = PCFG.fromstring("""
     S -> VP          [0.25]
@@ -76,9 +77,13 @@ if __name__ == "__main__":
     grammar = CFG.fromstring(rules)
 
     if MT == 1:
-        sentences = [next(generate_corpus(grammar)) for s in range(10)]
-        print(sentences)
+        sentences = [next(generate_corpus(grammar)) for s in range(N_SEN)]
+        for s in sentences:
+            print(' '.join(s))
+        # print(sentences)
     
     if MT == 2:
-        s = sample([s for s in generate(grammar, depth = 6)], 10)
-        print(s)
+        sentences = sample([s for s in generate(grammar, depth = 6, n = 2 * N_SEN)], N_SEN)
+        for s in sentences:
+            print(' '.join(s))
+        # print(sentences)
