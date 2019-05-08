@@ -1,22 +1,14 @@
 ROOT -> S
 S -> ADVP NP VP .
 ADVP -> NP IN
-NP -> NP NP
-NP -> DT JJ
-DT -> 'A'
-JJ -> 'good'
 NP -> JJ NNS
-JJ -> 'many'
+JJ -> 'Many'
 NNS -> 'years'
 IN -> 'ago'
 NP -> EX
 EX -> 'there'
-VP -> VBD PP NP
+VP -> VBD NP
 VBD -> 'lived'
-PP -> IN NP
-IN -> 'in'
-NP -> NNP
-NNP -> 'Italy'
 NP -> NP SBAR
 NP -> DT JJ NN
 DT -> 'a'
@@ -160,11 +152,10 @@ NP -> DT JJ NN
 DT -> 'the'
 JJ -> 'old'
 NN -> 'man'
-VP -> VBD ADJP , S
+VP -> VBD ADJP
 VBD -> 'was'
-ADJP -> JJ
+ADJP -> JJ S
 JJ -> 'busy'
-, -> ','
 S -> VP
 VP -> VBG CC VBG NP
 VBG -> 'cutting'
@@ -322,25 +313,18 @@ NP -> PRP
 PRP -> 'you'
 VP -> VBN VP
 VBN -> 'been'
-VP -> VBG NP
+VP -> VBG NP-TMP
 VBG -> 'doing'
-NP -> NP , NP
-NP -> NN
+NP-TMP -> NN
 NN -> 'today'
-, -> ','
-NP -> PRP$ JJ NN
-PRP$ -> 'my'
-JJ -> 'little'
-NN -> 'sculptor'
 . -> '?'
 ROOT -> S
-S -> CC NP VP .
-CC -> 'And'
+S -> NP VP .
 NP -> PRP
-PRP -> 'she'
+PRP -> 'She'
 VP -> MD VP
 MD -> 'would'
-VP -> VP CC VP , CC VP
+VP -> VP CC VP
 VP -> VB NP PP
 VB -> 'take'
 NP -> PRP
@@ -357,8 +341,13 @@ PP -> TO NP
 TO -> 'to'
 NP -> PRP
 PRP -> 'him'
-, -> ','
-CC -> 'or'
+. -> '.'
+ROOT -> S
+S -> NP VP .
+NP -> PRP
+PRP -> 'She'
+VP -> MD VP
+MD -> 'would'
 VP -> VB NP NP
 VB -> 'tell'
 NP -> PRP
@@ -390,10 +379,9 @@ JJ -> 'beautiful'
 NNS -> 'things'
 . -> '.'
 ROOT -> S
-S -> CC NP , SBAR , NP VP .
-CC -> 'And'
-NP -> DT JJ NN
-DT -> 'the'
+S -> NP-TMP , SBAR , NP VP .
+NP-TMP -> DT JJ NN
+DT -> 'The'
 JJ -> 'next'
 NN -> 'day'
 , -> ','
@@ -470,7 +458,7 @@ DT -> 'the'
 NN -> 'Count'
 . -> '.'
 ROOT -> S
-S -> S , CC S .
+S -> S CC S .
 S -> ADVP NP VP
 ADVP -> RB
 RB -> 'Sometimes'
@@ -485,7 +473,6 @@ NP -> DT JJ NN
 DT -> 'a'
 JJ -> 'grand'
 NN -> 'dinner'
-, -> ','
 CC -> 'and'
 S -> NP VP
 NP -> NP PP
@@ -511,28 +498,21 @@ NP -> PRP
 PRP -> 'him'
 . -> '.'
 ROOT -> S
-S -> ADVP NP VP .
-ADVP -> RB
+S -> RB NP VP .
 RB -> 'Then'
-NP -> NP NP
-NP -> NNP
-NNP -> 'Antonio'
 NP -> PRP$ NN
 PRP$ -> 'his'
 NN -> 'grandfather'
 VP -> MD VP
 MD -> 'would'
-VP -> VB PRT PP NP
+VP -> VB PRT PP
 VB -> 'go'
 PRT -> RP
 RP -> 'up'
 PP -> TO NP
 TO -> 'to'
-NP -> DT NN
+NP -> DT NN S
 DT -> 'the'
-NN -> 'Count'
-NP -> PRP$ NN S
-PRP$ -> 'his'
 NN -> 'house'
 S -> VP
 VP -> TO VP
@@ -557,19 +537,10 @@ NP -> PRP
 PRP -> 'he'
 VP -> VBD NP
 VBD -> 'was'
-NP -> NP CONJP NP
 NP -> DT JJ NN
 DT -> 'a'
 JJ -> 'fine'
 NN -> 'cook'
-CONJP -> RB RB IN
-RB -> 'as'
-RB -> 'well'
-IN -> 'as'
-NP -> DT JJ NN
-DT -> 'a'
-JJ -> 'good'
-NN -> 'stonecutter'
 . -> '.'
 ROOT -> S
 S -> NP VP .
@@ -605,7 +576,7 @@ JJ -> 'great'
 NN -> 'house'
 . -> '.'
 ROOT -> S
-S -> S , CC S .
+S -> S CC S .
 S -> NP VP
 NP -> NP PP
 NP -> DT NNS
@@ -620,7 +591,6 @@ VP -> VBD VP
 VBD -> 'were'
 VP -> VBG
 VBG -> 'coming'
-, -> ','
 CC -> 'and'
 S -> NP VP
 NP -> EX
@@ -638,9 +608,7 @@ JJ -> 'grand'
 NN -> 'feast'
 . -> '.'
 ROOT -> S
-S -> S , CC S .
-S -> S , CC S
-S -> NP VP
+S -> NP VP .
 NP -> DT NN
 DT -> 'The'
 NN -> 'boy'
@@ -649,11 +617,12 @@ MD -> 'could'
 RB -> 'not'
 VP -> VB
 VB -> 'cook'
-, -> ','
-CC -> 'and'
+. -> '.'
+ROOT -> S
+S -> S CC S .
 S -> NP VP
 NP -> PRP
-PRP -> 'he'
+PRP -> 'He'
 VP -> VBD RB ADJP
 VBD -> 'was'
 RB -> 'not'
@@ -671,9 +640,7 @@ IN -> 'on'
 NP -> DT NN
 DT -> 'the'
 NN -> 'table'
-, -> ','
 CC -> 'but'
-S -> S , CC S
 S -> NP VP
 NP -> PRP
 PRP -> 'he'
@@ -686,21 +653,20 @@ DT -> 'the'
 NNS -> 'pans'
 CC -> 'and'
 NNS -> 'kettles'
-, -> ','
-CC -> 'and'
-S -> SBAR , NP VP
-SBAR -> IN S
-IN -> 'as'
+. -> '.'
+ROOT -> S
+S -> S CC S .
 S -> NP VP
 NP -> PRP
-PRP -> 'he'
+PRP -> 'He'
 VP -> VBD ADJP
 VBD -> 'was'
 ADJP -> JJ CC JJ
 JJ -> 'smart'
 CC -> 'and'
 JJ -> 'quick'
-, -> ','
+CC -> 'and'
+S -> NP VP
 NP -> PRP
 PRP -> 'he'
 VP -> MD VP
@@ -746,10 +712,9 @@ NP -> NN
 NN -> 'dinner'
 . -> '.'
 ROOT -> S
-S -> S , CC S .
-S -> ADVP NP VP
-ADVP -> RB
+S -> RB S CC S .
 RB -> 'Then'
+S -> NP VP
 NP -> EX
 EX -> 'there'
 VP -> VBD NP
@@ -764,7 +729,6 @@ NP -> DT NN NN
 DT -> 'the'
 NN -> 'dining'
 NN -> 'room'
-, -> ','
 CC -> 'and'
 S -> NP VP
 NP -> DT NN
@@ -800,10 +764,9 @@ NP -> PRP
 PRP -> 'He'
 VP -> VBD UCP
 VBD -> 'was'
-UCP -> ADJP , CC VP
+UCP -> ADJP CC VP
 ADJP -> JJ
 JJ -> 'pale'
-, -> ','
 CC -> 'and'
 VP -> VBG PP
 VBG -> 'trembling'
@@ -892,10 +855,10 @@ VP -> VB
 VB -> 'say'
 . -> '?'
 ROOT -> S
-S -> CC NP VP .
-CC -> 'And'
-NP -> RB PDT DT JJ NNS
-RB -> 'now'
+S -> ADVP NP VP .
+ADVP -> RB
+RB -> 'Now'
+NP -> PDT DT JJ NNS
 PDT -> 'all'
 DT -> 'the'
 JJ -> 'other'
@@ -980,15 +943,12 @@ NP -> JJ NNP NNP
 JJ -> 'little'
 NNP -> 'Antonio'
 NNP -> 'Canova'
-VP -> VP , CC VP
+VP -> VP CC VP
 VP -> VBD NP
 VBD -> 'left'
-NP -> PRP$ NNS CC NNS
+NP -> PRP$ NNS
 PRP$ -> 'his'
 NNS -> 'pans'
-CC -> 'and'
-NNS -> 'kettles'
-, -> ','
 CC -> 'and'
 VP -> VBD PRT PP
 VBD -> 'went'
@@ -1034,16 +994,10 @@ NP -> DT NN
 DT -> 'the'
 NN -> 'table'
 . -> '?'
-ROOT -> S
-S -> ADVP , NP VP .
+ROOT -> FRAG
+FRAG -> ADVP SBAR .
 ADVP -> RB
 RB -> 'Certainly'
-, -> ','
-NP -> DT
-DT -> 'that'
-VP -> VBZ , SBAR
-VBZ -> 'is'
-, -> ','
 SBAR -> IN S
 IN -> 'if'
 S -> NP VP
@@ -1177,13 +1131,9 @@ VP -> VB
 VB -> 'do'
 . -> '.'
 ROOT -> S
-S -> CC ADVP , SBAR , NP VP .
-CC -> 'And'
-ADVP -> RB
-RB -> 'so'
-, -> ','
+S -> SBAR , NP VP .
 SBAR -> IN S
-IN -> 'since'
+IN -> 'Since'
 S -> NP VP
 NP -> NN RB
 NN -> 'nothing'
@@ -1233,8 +1183,7 @@ JJ -> 'yellow'
 NN -> 'butter'
 . -> '.'
 ROOT -> S
-S -> S , CC S .
-S -> NP VP
+S -> NP VP .
 NP -> NP NP
 NP -> CD CD NNS
 CD -> 'Two'
@@ -1245,25 +1194,23 @@ DT -> 'the'
 NN -> 'lump'
 VP -> VBD
 VBD -> 'weighed'
-, -> ','
-CC -> 'and'
-S -> NP VP
+. -> '.'
+ROOT -> S
+S -> NP VP .
 NP -> PRP
-PRP -> 'it'
+PRP -> 'It'
 VP -> VBD ADVP VP
 VBD -> 'had'
 ADVP -> RB
 RB -> 'just'
-VP -> VBN PP , ADJP
+VP -> VBN PP PP
 VBN -> 'come'
-PP -> IN
+PP -> IN ADJP
 IN -> 'in'
-, -> ','
-ADJP -> JJ CC JJ , PP
+ADJP -> JJ CC JJ
 JJ -> 'fresh'
 CC -> 'and'
 JJ -> 'clean'
-, -> ','
 PP -> IN NP
 IN -> 'from'
 NP -> NP PP
@@ -1277,7 +1224,7 @@ DT -> 'the'
 NN -> 'mountain'
 . -> '.'
 ROOT -> S
-S -> PP , NP VP .
+S -> PP NP VP .
 PP -> IN NP
 IN -> 'With'
 NP -> NP PP
@@ -1290,7 +1237,6 @@ IN -> 'in'
 NP -> PRP$ NN
 PRP$ -> 'his'
 NN -> 'hand'
-, -> ','
 NP -> NNP
 NNP -> 'Antonio'
 VP -> VBD S
@@ -1580,17 +1526,9 @@ DT -> 'the'
 NN -> 'artist'
 . -> '.'
 ROOT -> S
-S -> ADVP , NP VP .
-ADVP -> RB
-RB -> 'Truly'
-, -> ','
-NP -> NP , NP
-NP -> PRP$ NNS
-PRP$ -> 'my'
-NNS -> 'friends'
-, -> ','
+S -> NP VP .
 NP -> DT
-DT -> 'this'
+DT -> 'This'
 VP -> VBZ ADJP PP
 VBZ -> 'is'
 ADJP -> RB JJ PP
@@ -1614,13 +1552,11 @@ NP -> PRP
 PRP -> 'you'
 . -> '.'
 ROOT -> S
-S -> CC ADVP NP VP .
-CC -> 'And'
-ADVP -> RB
-RB -> 'then'
+S -> RB NP VP .
+RB -> 'Then'
 NP -> PRP
 PRP -> 'he'
-VP -> VP , CC VP
+VP -> VP CC VP
 VP -> VBD PP
 VBD -> 'called'
 PP -> TO NP
@@ -1629,7 +1565,6 @@ NP -> PRP$ NN NN
 PRP$ -> 'his'
 NN -> 'head'
 NN -> 'servant'
-, -> ','
 CC -> 'and'
 VP -> VBD NP SBAR
 VBD -> 'asked'
@@ -1722,13 +1657,9 @@ DT -> 'the'
 NN -> 'room'
 . -> '.'
 ROOT -> S
-S -> NP , NP VP .
-NP -> PRP$ NN
-PRP$ -> 'My'
-NN -> 'lad'
-, -> ','
+S -> NP VP .
 NP -> PRP
-PRP -> 'you'
+PRP -> 'You'
 VP -> VBP VP
 VBP -> 'have'
 VP -> VBN NP
@@ -1831,7 +1762,7 @@ NP -> NNP
 NNP -> 'Antonio'
 . -> '.'
 ROOT -> S
-S -> S , CC S .
+S -> S CC S .
 S -> NP VP
 NP -> EX
 EX -> 'There'
@@ -1845,7 +1776,6 @@ PP -> IN NP
 IN -> 'among'
 NP -> PRP
 PRP -> 'them'
-, -> ','
 CC -> 'and'
 S -> NP VP
 NP -> PRP
@@ -2030,12 +1960,9 @@ JJ -> 'much'
 NN -> 'skill'
 . -> '.'
 ROOT -> S
-S -> ADVP , PP , NP VP .
-ADVP -> RB
-RB -> 'Now'
-, -> ','
+S -> PP , NP ADVP VP .
 PP -> RB IN S
-RB -> 'instead'
+RB -> 'Instead'
 IN -> 'of'
 S -> VP
 VP -> VBG NP
@@ -2045,20 +1972,21 @@ NN -> 'butter'
 , -> ','
 NP -> PRP
 PRP -> 'he'
+ADVP -> RB
+RB -> 'now'
 VP -> VBD NP
 VBD -> 'chiseled'
 NP -> NN
 NN -> 'marble'
 . -> '.'
 ROOT -> S
-S -> PP , NP VP .
+S -> PP NP VP .
 PP -> IN NP
 IN -> 'In'
 NP -> DT JJ NNS
 DT -> 'a'
 JJ -> 'few'
 NNS -> 'years'
-, -> ','
 NP -> NNP NNP
 NNP -> 'Antonio'
 NNP -> 'Canova'

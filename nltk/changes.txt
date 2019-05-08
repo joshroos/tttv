@@ -1,0 +1,10 @@
+; weggehaald voor versimpeling. Hiervan aparte zinnen gemaakt
+constructie als 'for he was' vervangen door 'because he was'. Dit zorgt voor minder ambiguiteit bij het woord 'for'
+alle leestekens behalve ?, !, ., weggehaald. Anders moeilijk te parsen
+ook Direct quotations weggehaald voor versimpeling
+'s vervangen door 'his' omdat in de grammar regels dit fouten gaf
+eerste zin aangepast omdat die te lang duurde om te parsen vanwege veel verschillende parse trees
+kommas die niet nodig zijn weggehaald of lange zinnen met komma's
+komma's die niet twee aparte zinnen opdelen
+
+WAT VALT OP: parsen duurt lang voor zinnen waar twee keer 'S' in staat. 
