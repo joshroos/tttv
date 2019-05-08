@@ -162,7 +162,7 @@ def write_grammar():
 
 if __name__ == "__main__":
 
-    txt = open('unparsed_sentences.txt').read()
+    txt = open('antonio_edited.txt').read()
     words = get_words(txt)
     sentences = get_sentences(txt)
     tags, tagged_words = pos_tags(sentences)

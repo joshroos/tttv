@@ -1,18 +1,568 @@
-Many years ago there lived a little boy whose name was Antonio Canova .
-He lived with his grandfather because his own father was dead . 
-His grandfather was a stonecutter and he was very poor . 
-Antonio was a puny lad and not strong enough to work . 
-He did not care to play with the other boys of the town . 
-But he liked to go with his grandfather to the stoneyard . 
-While the old man was busy , cutting and trimming the great blocks of stone , the lad would play among the chips . 
-Sometimes he would make a little statue of soft clay . 
-Sometimes he would take hammer and chisel and try to cut a statue from a piece of rock . 
-He showed so much skill that his grandfather was delighted . 
-The boy will be a sculptor some day . 
-Then when they went home in the evening . 
-What have you been doing today , my little sculptor ?
-She would take him upon her lap and sing to him . 
-She would tell him stories that filled his mind with pictures of wonderful and beautiful things . 
-And the next day , when he went back to the stoneyard , he would try to make some of those pictures in stone or clay . 
-There lived in the same town a rich man who was called the Count . 
-Sometimes the Count would have a grand dinner , and his rich friends from other towns would come to visit him . 
+ROOT -> FRAG
+ROOT -> INTJ
+ROOT -> NP
+ROOT -> S
+ROOT -> SBARQ
+ROOT -> SQ
+S -> ADVP NP VP
+S -> ADVP NP VP SY
+S -> CC NP VP SY
+S -> IN NP VP SY
+S -> NP ADVP VP
+S -> NP VP
+S -> NP VP SY
+S -> NP-TMP CO SBAR CO NP VP SY
+S -> PP CO NP ADVP VP SY
+S -> PP NP VP
+S -> PP NP VP SY
+S -> RB NP VP SY
+S -> RB S CC S SY
+S -> S CC S SY
+S -> SBAR CO NP VP SY
+S -> VP
+S -> VP SY
+CO -> ','
+SY -> '!'
+SY -> '.'
+SY -> '?'
+ADJP -> ADJP PP
+ADJP -> ADJP S
+ADJP -> IN JJ
+ADJP -> JJ
+ADJP -> JJ SY
+ADJP -> JJ CC JJ
+ADJP -> JJ JJ
+ADJP -> JJ RB S
+ADJP -> JJ S
+ADJP -> JJR
+ADJP -> NP JJR
+ADJP -> RB JJ
+ADJP -> RB JJ PP
+ADJP -> WHADVP JJ
+ADVP -> CC
+ADVP -> NP IN
+ADVP -> NP RB
+ADVP -> RB
+ADVP -> RB PP
+ADVP -> RBR
+FRAG -> ADJP SBAR SY
+FRAG -> ADVP SBAR SY
+FRAG -> WHADVP ADJP
+INTJ -> NN SY
+NP -> ADJP DT NN
+NP -> ADJP NN
+NP -> ADJP NNS
+NP -> CD
+NP -> CD CD NNS
+NP -> DT
+NP -> DT ADJP NN
+NP -> DT JJ JJ NN
+NP -> DT JJ NN
+NP -> DT JJ NNS
+NP -> DT JJS NNS
+NP -> DT NN
+NP -> DT NN NN
+NP -> DT NN S
+NP -> DT NNP
+NP -> DT NNS
+NP -> DT NNS CC NNS
+NP -> DT RB JJ NN
+NP -> EX
+NP -> JJ
+NP -> JJ JJ NNS
+NP -> JJ NN
+NP -> JJ NNP NNP
+NP -> JJ NNS
+NP -> NN
+NP -> NN CC NN
+NP -> NN RB
+NP -> NNP
+NP -> NNP NNP
+NP -> NNS
+NP -> NP CC NP
+NP -> NP CC RB
+NP -> NP NP
+NP -> NP NP SY
+NP -> NP PP
+NP -> NP PP SBAR
+NP -> NP SBAR
+NP -> PDT DT JJ NNS
+NP -> PDT DT NN
+NP -> PDT DT NNS
+NP -> PRP
+NP -> PRPS JJ NN
+NP -> PRPS JJ NNS
+NP -> PRPS NN
+NP -> PRPS NN NN
+NP -> PRPS NNS
+NP -> RB
+NP -> RB DT NN
+NP -> WP
+NP-TMP -> CD NN
+NP-TMP -> DT JJ NN
+NP-TMP -> NN
+PP -> ADVP IN NP
+PP -> CC NP
+PP -> IN
+PP -> IN ADJP
+PP -> IN NP
+PP -> IN PP
+PP -> IN S
+PP -> NP IN NP
+PP -> RB IN S
+PP -> TO NP
+PRT -> RB
+PRT -> RP
+SBAR -> IN S
+SBAR -> S
+SBAR -> WHADVP S
+SBAR -> WHNP S
+SBAR -> WHPP S
+SBARQ -> SBARQ CC SBARQ
+SBARQ -> WHNP SQ
+SBARQ -> WHNP SQ SY
+SQ -> MD NP VP
+SQ -> MD NP VP SY
+SQ -> SBAR CO MD NP VP SY
+SQ -> VBP NP SBAR
+SQ -> VBP NP VP
+SQ -> VBZ NP
+UCP -> ADJP CC VP
+VP -> MD ADVP VP
+VP -> MD RB VP
+VP -> MD VP
+VP -> NN S
+VP -> NP ADJP
+VP -> TO VP
+VP -> VB
+VP -> VB ADJP
+VP -> VB ADJP PP SBAR
+VP -> VB CC VB NP
+VP -> VB CC VB PP
+VP -> VB NP
+VP -> VB NP ADVP
+VP -> VB NP ADVP SBAR
+VP -> VB NP NP
+VP -> VB NP PP
+VP -> VB PP
+VP -> VB PP PP
+VP -> VB PP SBAR
+VP -> VB PRT PP
+VP -> VB S
+VP -> VB SBAR
+VP -> VB VP
+VP -> VBD
+VP -> VBD ADJP
+VP -> VBD ADVP PP
+VP -> VBD ADVP SBAR
+VP -> VBD ADVP VP
+VP -> VBD NP
+VP -> VBD NP PP
+VP -> VBD NP SBAR
+VP -> VBD NP-TMP SBAR
+VP -> VBD PP
+VP -> VBD PP NP
+VP -> VBD PP PP
+VP -> VBD PP S
+VP -> VBD PP SBAR
+VP -> VBD PRT PP
+VP -> VBD RB ADJP
+VP -> VBD RB VP
+VP -> VBD S
+VP -> VBD SBAR
+VP -> VBD UCP
+VP -> VBD VP
+VP -> VBG
+VP -> VBG CC VBG NP
+VP -> VBG NP
+VP -> VBG NP PP
+VP -> VBG NP-TMP
+VP -> VBG PP
+VP -> VBG S
+VP -> VBN
+VP -> VBN NP
+VP -> VBN NP PP
+VP -> VBN PP
+VP -> VBN PP PP
+VP -> VBN PP S
+VP -> VBN S
+VP -> VBN VP
+VP -> VBP ADVP ADVP
+VP -> VBP NP
+VP -> VBP PP
+VP -> VBP VP
+VP -> VBZ ADJP
+VP -> VBZ ADJP PP
+VP -> VBZ NP
+VP -> VP CC VP
+WHADVP -> WRB
+WHNP -> WDT
+WHNP -> WP
+WHNP -> WPS NN
+WHPP -> IN WHNP
+
+CC -> 'But'
+CC -> 'and'
+CC -> 'but'
+CC -> 'or'
+CD -> 'Two'
+CD -> 'hundred'
+CD -> 'one'
+DT -> 'All'
+DT -> 'Some'
+DT -> 'The'
+DT -> 'This'
+DT -> 'a'
+DT -> 'all'
+DT -> 'an'
+DT -> 'another'
+DT -> 'no'
+DT -> 'some'
+DT -> 'the'
+DT -> 'this'
+DT -> 'those'
+EX -> 'There'
+EX -> 'there'
+IN -> 'By'
+IN -> 'For'
+IN -> 'If'
+IN -> 'In'
+IN -> 'On'
+IN -> 'Since'
+IN -> 'While'
+IN -> 'With'
+IN -> 'after'
+IN -> 'ago'
+IN -> 'among'
+IN -> 'around'
+IN -> 'as'
+IN -> 'at'
+IN -> 'because'
+IN -> 'by'
+IN -> 'for'
+IN -> 'from'
+IN -> 'if'
+IN -> 'in'
+IN -> 'into'
+IN -> 'of'
+IN -> 'on'
+IN -> 'so'
+IN -> 'than'
+IN -> 'that'
+IN -> 'until'
+IN -> 'upon'
+IN -> 'with'
+IN -> 'without'
+JJ -> 'Many'
+JJ -> 'angry'
+JJ -> 'beautiful'
+JJ -> 'busy'
+JJ -> 'clean'
+JJ -> 'crouching'
+JJ -> 'dead'
+JJ -> 'delighted'
+JJ -> 'enough'
+JJ -> 'famous'
+JJ -> 'few'
+JJ -> 'fine'
+JJ -> 'first'
+JJ -> 'fresh'
+JJ -> 'grand'
+JJ -> 'great'
+JJ -> 'large'
+JJ -> 'last'
+JJ -> 'little'
+JJ -> 'many'
+JJ -> 'much'
+JJ -> 'next'
+JJ -> 'odd'
+JJ -> 'old'
+JJ -> 'other'
+JJ -> 'own'
+JJ -> 'pale'
+JJ -> 'poor'
+JJ -> 'proud'
+JJ -> 'puny'
+JJ -> 'quick'
+JJ -> 'rich'
+JJ -> 'right'
+JJ -> 'same'
+JJ -> 'servant'
+JJ -> 'short'
+JJ -> 'smart'
+JJ -> 'soft'
+JJ -> 'square'
+JJ -> 'strong'
+JJ -> 'wonderful'
+JJ -> 'yellow'
+JJR -> 'handsomer'
+JJR -> 'prettier'
+JJS -> 'best'
+JJS -> 'greatest'
+MD -> 'Will'
+MD -> 'can'
+MD -> 'could'
+MD -> 'shall'
+MD -> 'should'
+MD -> 'will'
+MD -> 'would'
+NN -> 'Count'
+NN -> 'None'
+NN -> 'Nonsense'
+NN -> 'art'
+NN -> 'artist'
+NN -> 'boy'
+NN -> 'butter'
+NN -> 'call'
+NN -> 'center'
+NN -> 'city'
+NN -> 'clay'
+NN -> 'cook'
+NN -> 'crash'
+NN -> 'dairy'
+NN -> 'day'
+NN -> 'deal'
+NN -> 'dining'
+NN -> 'dinner'
+NN -> 'evening'
+NN -> 'everything'
+NN -> 'failure'
+NN -> 'father'
+NN -> 'feast'
+NN -> 'figure'
+NN -> 'fright'
+NN -> 'genius'
+NN -> 'grandfather'
+NN -> 'half'
+NN -> 'hammer'
+NN -> 'hand'
+NN -> 'head'
+NN -> 'height'
+NN -> 'home'
+NN -> 'honor'
+NN -> 'hour'
+NN -> 'house'
+NN -> 'kitchen'
+NN -> 'knife'
+NN -> 'lad'
+NN -> 'land'
+NN -> 'lap'
+NN -> 'length'
+NN -> 'lion'
+NN -> 'look'
+NN -> 'lump'
+NN -> 'man'
+NN -> 'marble'
+NN -> 'mind'
+NN -> 'mountain'
+NN -> 'name'
+NN -> 'nothing'
+NN -> 'notice'
+NN -> 'piece'
+NN -> 'place'
+NN -> 'praise'
+NN -> 'rock'
+NN -> 'room'
+NN -> 'sculptor'
+NN -> 'seat'
+NN -> 'servant'
+NN -> 'shape'
+NN -> 'skill'
+NN -> 'something'
+NN -> 'statue'
+NN -> 'stone'
+NN -> 'stonecutter'
+NN -> 'stoneyard'
+NN -> 'surprise'
+NN -> 'table'
+NN -> 'teacher'
+NN -> 'thing'
+NN -> 'time'
+NN -> 'today'
+NN -> 'town'
+NN -> 'trouble'
+NN -> 'work'
+NN -> 'world'
+NNP -> 'Antonio'
+NNP -> 'Canova'
+NNP -> 'Count'
+NNS -> 'artists'
+NNS -> 'blocks'
+NNS -> 'boys'
+NNS -> 'chips'
+NNS -> 'friends'
+NNS -> 'guests'
+NNS -> 'hands'
+NNS -> 'kettles'
+NNS -> 'minutes'
+NNS -> 'pans'
+NNS -> 'people'
+NNS -> 'pictures'
+NNS -> 'pieces'
+NNS -> 'pounds'
+NNS -> 'sculptors'
+NNS -> 'servants'
+NNS -> 'statues'
+NNS -> 'stories'
+NNS -> 'things'
+NNS -> 'towns'
+NNS -> 'ways'
+NNS -> 'years'
+PDT -> 'All'
+PDT -> 'all'
+PDT -> 'such'
+PRP -> 'He'
+PRP -> 'I'
+PRP -> 'It'
+PRP -> 'She'
+PRP -> 'They'
+PRP -> 'You'
+PRP -> 'he'
+PRP -> 'him'
+PRP -> 'it'
+PRP -> 'me'
+PRP -> 'them'
+PRP -> 'they'
+PRP -> 'we'
+PRP -> 'you'
+PRPS -> 'His'
+PRPS -> 'My'
+PRPS -> 'her'
+PRPS -> 'his'
+PRPS -> 'its'
+PRPS -> 'my'
+PRPS -> 'your'
+RB -> 'Certainly'
+RB -> 'Instead'
+RB -> 'Now'
+RB -> 'Perhaps'
+RB -> 'Sometimes'
+RB -> 'Then'
+RB -> 'ago'
+RB -> 'as'
+RB -> 'back'
+RB -> 'else'
+RB -> 'enough'
+RB -> 'ever'
+RB -> 'just'
+RB -> 'nicely'
+RB -> 'not'
+RB -> 'now'
+RB -> 'only'
+RB -> 'pretty'
+RB -> 'so'
+RB -> 'still'
+RB -> 'up'
+RB -> 'very'
+RB -> 'well'
+RBR -> 'more'
+RP -> 'down'
+RP -> 'up'
+TO -> 'to'
+VB -> 'Let'
+VB -> 'arrange'
+VB -> 'be'
+VB -> 'care'
+VB -> 'carve'
+VB -> 'chisel'
+VB -> 'choose'
+VB -> 'come'
+VB -> 'cook'
+VB -> 'cut'
+VB -> 'do'
+VB -> 'go'
+VB -> 'have'
+VB -> 'help'
+VB -> 'let'
+VB -> 'live'
+VB -> 'make'
+VB -> 'play'
+VB -> 'please'
+VB -> 'say'
+VB -> 'see'
+VB -> 'sing'
+VB -> 'spread'
+VB -> 'stand'
+VB -> 'take'
+VB -> 'teach'
+VB -> 'tell'
+VB -> 'try'
+VB -> 'visit'
+VB -> 'wait'
+VB -> 'wash'
+VB -> 'work'
+VBD -> 'Was'
+VBD -> 'allowed'
+VBD -> 'arranged'
+VBD -> 'asked'
+VBD -> 'bade'
+VBD -> 'became'
+VBD -> 'began'
+VBD -> 'called'
+VBD -> 'came'
+VBD -> 'carried'
+VBD -> 'chiseled'
+VBD -> 'depended'
+VBD -> 'did'
+VBD -> 'filled'
+VBD -> 'had'
+VBD -> 'happened'
+VBD -> 'hoped'
+VBD -> 'knew'
+VBD -> 'laughed'
+VBD -> 'left'
+VBD -> 'liked'
+VBD -> 'lived'
+VBD -> 'made'
+VBD -> 'rushed'
+VBD -> 'sat'
+VBD -> 'saw'
+VBD -> 'sent'
+VBD -> 'showed'
+VBD -> 'was'
+VBD -> 'weighed'
+VBD -> 'went'
+VBD -> 'were'
+VBG -> 'carving'
+VBG -> 'coming'
+VBG -> 'cutting'
+VBG -> 'doing'
+VBG -> 'having'
+VBG -> 'making'
+VBG -> 'trembling'
+VBG -> 'trimming'
+VBN -> 'been'
+VBN -> 'broken'
+VBN -> 'called'
+VBN -> 'carved'
+VBN -> 'caused'
+VBN -> 'come'
+VBN -> 'crowded'
+VBN -> 'done'
+VBN -> 'employed'
+VBN -> 'finished'
+VBN -> 'found'
+VBN -> 'had'
+VBN -> 'known'
+VBN -> 'made'
+VBN -> 'molded'
+VBN -> 'shown'
+VBP -> 'am'
+VBP -> 'are'
+VBP -> 'have'
+VBP -> 'talk'
+VBP -> 'wonder'
+VBZ -> 'is'
+WDT -> 'What'
+WDT -> 'that'
+WDT -> 'which'
+WP -> 'What'
+WP -> 'Who'
+WP -> 'what'
+WP -> 'who'
+WPS -> 'whose'
+WRB -> 'How'
+WRB -> 'When'
+WRB -> 'when'
+WRB -> 'where'
+
