@@ -77,14 +77,14 @@ if __name__ == "__main__":
     grammar = PCFG.fromstring(rules)
 
     if MT == 1:
-        sentences = [next(generate_corpus(grammar, Nonterminal('S'))) for s in range(70)]
-        sentences = sample([s for s in sentences if len(s) < 15], N_SEN)
+        sentences = [next(generate_corpus(grammar, Nonterminal('S'))) for s in range(500)]
+        sentences = sample([s for s in sentences if 4 < len(s) < 15], N_SEN)
         for s in sentences:
-            print(' '.join(s))
+            print(' '.join(s).lower())
         # print(sentences)
     
     if MT == 2:
-        sentences = sample([s for s in generate(grammar, start=Nonterminal('S'), depth = 8, n = 5000)], N_SEN)
+        sentences = sample([s for s in generate(grammar, start=Nonterminal('S'), depth = 8, n = 100)], N_SEN)
         for s in sentences:
             print(' '.join(s).lower())
         # print(sentences)
