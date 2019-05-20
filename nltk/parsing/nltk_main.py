@@ -167,6 +167,8 @@ if __name__ == "__main__":
     sentences = get_sentences(txt)
     tags, tagged_words = pos_tags(sentences)
 
+    print_statistics(words, sentences, tags)
+    exit()
     #extract_rules(sentences)
     #write_grammar()
 

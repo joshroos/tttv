@@ -9,7 +9,7 @@ from random import sample
 
 MT = 1
 N_SEN = 50
-grammar_path = "../grammars/grammar_pcfg.txt"
+grammar_path = "../grammars/grammar_rules_2.txt"
 
 demo_pcfg = PCFG.fromstring("""
     S -> VP          [0.25]
@@ -74,8 +74,8 @@ def generate_corpus(grammar, prod = None):
 
 if __name__ == "__main__":
     rules = open(grammar_path).read()
-    grammar = PCFG.fromstring(rules)
-
+    grammar = CFG.fromstring(rules)
+    print(grammar)
     if MT == 1:
         sentences = [next(generate_corpus(grammar, Nonterminal('S'))) for s in range(500)]
         sentences = sample([s for s in sentences if 4 < len(s) < 15], N_SEN)
